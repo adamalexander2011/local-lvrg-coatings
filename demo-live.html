@@ -1,0 +1,86 @@
+<title>Your Local LVRG Demo</title>
+<style>
+  :root{--paper:#FBFAF7;--screen:#FFFFFF;--ink:#1C1E21;--body:#33373D;--muted:#61666D;
+  --hairline:#E7E4DD;--hairline-soft:#F1EFE9;--accent:#C2410C;--accent-hover:#A33509;
+  --book:#1E7F3C;--book-deep:#166534;--book-soft:#EAF6EE;--bubble-in:#EFEDE8;--radius:12px;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace}
+  *{box-sizing:border-box;margin:0}
+  body{background:var(--paper);color:var(--body);font:400 17px/1.6 var(--sans);-webkit-font-smoothing:antialiased}
+  h1,h2{color:var(--ink);text-wrap:balance;letter-spacing:-.03em}
+  h1{font-size:clamp(32px,5.5vw,50px);font-weight:800;line-height:1.06}
+  h2{font-size:clamp(24px,4vw,34px);font-weight:800;line-height:1.1;letter-spacing:-.02em}
+  a{color:var(--accent);text-decoration:none}
+  .wrap{max-width:720px;margin:0 auto;padding:0 22px}
+  header{border-bottom:1px solid var(--hairline)}
+  .nav{display:flex;align-items:center;height:64px}
+  .logo{font:800 19px/1 var(--sans);color:var(--ink)}
+  .logo span{color:var(--accent)}
+  .nav a.back{margin-left:auto;font-size:15px;font-weight:600;color:var(--ink)}
+  section{padding:56px 0 90px}
+  .eyebrow{font:700 12.5px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+  .lede{margin-top:16px;font-size:18.5px;color:var(--ink);max-width:36em}
+  .card{margin-top:34px;background:var(--screen);border:2px solid var(--ink);border-radius:18px;padding:32px 30px;box-shadow:0 16px 40px rgba(28,30,33,.08)}
+  label{font:700 14px/1.3 var(--sans);color:var(--ink);display:flex;flex-direction:column;gap:7px}
+  input[type=url],input[type=tel],input[type=text]{font:400 17px/1.4 var(--sans);color:var(--ink);background:var(--paper);border:1.5px solid var(--hairline);border-radius:9px;padding:14px;width:100%}
+  input:focus{outline:3px solid var(--accent);outline-offset:1px;border-color:var(--accent)}
+  button,.btn{font:700 17px/1 var(--sans);padding:17px 30px;border-radius:10px;border:0;background:var(--accent);color:#fff;cursor:pointer;display:inline-block;text-align:center}
+  button:hover,.btn:hover{background:var(--accent-hover)}
+  button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+  .fine{font:400 13.5px/1.55 var(--sans);color:var(--muted)}
+  .steps{margin-top:40px;counter-reset:s}
+  .st{display:flex;gap:16px;padding:18px 0;border-top:1px solid var(--hairline)}
+  .st:last-of-type{border-bottom:1px solid var(--hairline)}
+  .st::before{counter-increment:s;content:counter(s);width:30px;height:30px;flex:none;border-radius:50%;background:var(--ink);color:var(--paper);font:800 14px/30px var(--mono);text-align:center}
+  .st .t{font:700 16.5px/1.4 var(--sans);color:var(--ink)}
+  .st p{font-size:15.5px;margin-top:4px}
+  .chipset{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+  .pchip{font:600 14px/1.3 var(--sans);color:var(--ink);background:var(--hairline-soft);border:1px solid var(--hairline);border-radius:99px;padding:9px 15px}
+  .push{margin-top:22px;background:var(--screen);border:1px solid var(--hairline);border-left:6px solid var(--book);border-radius:16px;padding:20px 22px;box-shadow:0 16px 40px rgba(30,127,60,.14);max-width:430px}
+  .push .tag{font:700 13px/1 var(--mono);letter-spacing:.1em;color:var(--book-deep)}
+  .push .when{font:800 26px/1.2 var(--sans);color:var(--ink);margin-top:8px}
+  .push .what{font:400 15px/1.5 var(--mono);color:var(--muted);margin-top:6px}
+  footer{border-top:1px solid var(--hairline);padding:32px 0;font-size:14px;color:var(--muted);margin-top:60px}
+</style>
+<header><div class="wrap nav"><a class="logo" href="index.html">Local <span>LVRG</span></a><a class="back" href="index.html">&larr; Back to Local LVRG</a></div></header>
+<section><div class="wrap">
+  <p class="eyebrow">Your demonstration</p>
+  <h1 style="margin-top:14px">You&rsquo;re in. Here&rsquo;s how to break it.</h1>
+  <p class="lede">You are about to text with the estimate assistant. It doesn&rsquo;t know you&rsquo;re a contractor. As far as it&rsquo;s concerned, you&rsquo;re a homeowner with an ugly garage floor.</p>
+
+  <div class="steps">
+    <div class="st"><div><span class="t">Open by naming your company.</span><p>Text something like: &ldquo;Hi, is this [Your Company] in [Your City]? I need my garage floor coated.&rdquo; From that moment it answers as your company&rsquo;s own estimate assistant.</p></div></div>
+    <div class="st"><div><span class="t">Play the homeowner.</span><p>Ask about a two-car garage. Mention cracks. Push on price. Be difficult if you want.</p></div></div>
+    <div class="st"><div><span class="t">Try to make it book.</span><p>It will qualify the project, capture the name and address, and offer real appointment times.</p></div></div>
+    <div class="st"><div><span class="t">Watch what the owner gets.</span><p>The moment it books, the owner-side notification fires. That buzz is the product.</p></div></div>
+  </div>
+
+  <div class="card" style="text-align:center">
+    <h2>Your demo is ready.</h2>
+    <p style="margin-top:12px;font-size:16px">It opens in a new tab. Remember: you&rsquo;re the homeowner. Name your company in your first message and it becomes your company.</p>
+    <a class="btn" href="https://demo.locallvrg.co/demo/KZa3WuLAKbvJ4t9J" target="_blank" rel="noopener" style="margin-top:18px;font-size:18px;padding:19px 38px">Open My Demo &rarr;</a>
+    <p class="fine" style="margin-top:14px">Private demonstration &middot; not a customer deployment &middot; nothing is ever sent to your customers</p>
+  </div>
+
+  <h2 style="margin-top:50px">Things to try on it</h2>
+  <div class="chipset">
+    <span class="pchip">&ldquo;How much for a 2-car garage?&rdquo;</span>
+    <span class="pchip">&ldquo;It was painted before and it&rsquo;s peeling&rdquo;</span>
+    <span class="pchip">&ldquo;Got a couple cracks, is that a problem?&rdquo;</span>
+    <span class="pchip">&ldquo;What colors can I get?&rdquo;</span>
+    <span class="pchip">&ldquo;Can you do it in winter?&rdquo;</span>
+    <span class="pchip">&ldquo;What time can someone come out?&rdquo;</span>
+  </div>
+
+  <div style="margin-top:56px;border-top:1px solid var(--hairline);padding-top:44px">
+    <h2>Here is what the owner receives one second later.</h2>
+    <div class="push">
+      <div class="tag">NEW ESTIMATE BOOKED</div>
+      <div class="when">Friday &middot; 3:00 PM</div>
+      <div class="what">Two-car garage &middot; your service area &middot; Source: your website</div>
+    </div>
+    <p style="margin-top:26px;font-size:18px;color:var(--ink);font-weight:600">What normally happens in your business when a lead texts like that after hours?</p>
+    <a class="btn" href="index.html#pricing" style="margin-top:18px">See Pricing &amp; Options</a>
+  </div>
+</div></section>
+<footer><div class="wrap">&copy; 2026 Local LVRG &middot; <a href="privacy.html">Privacy</a> &middot; <a href="terms.html">Terms</a> &middot; <a href="sms-terms.html">SMS Terms</a></div></footer>
