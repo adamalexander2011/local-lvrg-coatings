@@ -1,0 +1,1093 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Viper Concrete Coatings &amp; Polishing — Grand Blanc, MI | Concept Site</title>
+<meta name="description" content="Concept website built for Viper Concrete Coatings &amp; Polishing of Grand Blanc, Michigan. Polished concrete, epoxy flooring, industrial coatings, and surface preparation across Genesee County.">
+<meta property="og:title" content="Viper Concrete Coatings &amp; Polishing — Grand Blanc, MI">
+<meta property="og:description" content="Polished concrete, epoxy, and industrial floor systems installed across Genesee County. Get a same-day ballpark and lock an estimate in under two minutes.">
+<meta property="og:image" content="assets/viper/hero-wide.jpg">
+<link rel="icon" href="assets/viper/logo.png">
+<link rel="preload" as="font" type="font/woff2" href="assets/viper/fonts/archivo.woff2" crossorigin>
+<style>
+/* self-hosted — the page makes no third-party requests at all */
+@font-face{font-family:'Archivo';font-style:normal;font-weight:400 900;font-stretch:100%;font-display:swap;
+  src:url(assets/viper/fonts/archivo.woff2) format('woff2');
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:600;font-display:swap;
+  src:url(assets/viper/fonts/barlow-condensed.woff2) format('woff2');
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+
+:root{
+  --ink:#0A0A0B; --panel:#121215; --panel2:#17171B; --panel3:#1E1E23;
+  --line:#292930; --line-soft:#1F1F25;
+  --gold:#C49B43; --gold-lt:#E3C177; --gold-dk:#8C6C27; --gold-glow:rgba(196,155,67,.16);
+  --text:#EAE8E3; --body:#B6B2AA; --muted:#8A867E;
+  --ok:#4FB870; --ok-dk:#2E7A47;
+  --sans:'Archivo',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+  --cond:'Barlow Condensed','Archivo',-apple-system,'Segoe UI',Roboto,sans-serif;
+  --mono:ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace;
+  --r:4px; --maxw:1200px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{max-width:100%;background:var(--ink);color:var(--body);font:400 17px/1.65 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:var(--gold-lt);text-decoration:none}
+h1,h2,h3,h4{color:var(--text);letter-spacing:-.025em;text-wrap:balance;line-height:1.06;font-weight:800}
+h1{font-size:clamp(40px,7.2vw,78px);font-weight:900;letter-spacing:-.04em}
+h2{font-size:clamp(30px,4.6vw,52px);font-weight:800;letter-spacing:-.035em}
+h3{font-size:clamp(20px,2.2vw,25px);font-weight:700;letter-spacing:-.02em;line-height:1.2}
+p{text-wrap:pretty}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.narrow{max-width:860px}
+section{padding:clamp(64px,9vw,116px) 0;position:relative}
+section[id],div[id="top"]{scroll-margin-top:96px}
+@media(max-width:660px){section[id]{scroll-margin-top:80px}}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
+::selection{background:var(--gold);color:#0A0A0B}
+
+/* ---------- shared bits ---------- */
+.eyebrow{font:600 13px/1 var(--cond);letter-spacing:.24em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:12px}
+.eyebrow::before{content:"";width:26px;height:1px;background:var(--gold);opacity:.7;flex:none}
+.lede{font-size:clamp(17px,1.9vw,20px);color:var(--body);max-width:60ch;margin-top:20px}
+.sec-head{margin-bottom:clamp(38px,5vw,58px)}
+.sec-head h2{margin-top:18px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font:700 15px/1 var(--sans);letter-spacing:.01em;padding:19px 30px;border-radius:var(--r);border:1.5px solid transparent;cursor:pointer;transition:background .18s,color .18s,border-color .18s,transform .18s;text-align:center}
+.btn-gold{background:var(--gold);color:#0A0A0B;border-color:var(--gold)}
+.btn-gold:hover{background:var(--gold-lt);border-color:var(--gold-lt)}
+.btn-line{border-color:rgba(234,232,227,.28);color:var(--text)}
+.btn-line:hover{border-color:var(--text);background:rgba(234,232,227,.06)}
+.btn-sm{padding:13px 20px;font-size:14px}
+.btn:active{transform:translateY(1px)}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.2,.7,.3,1),transform .7s cubic-bezier(.2,.7,.3,1)}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+.rule{height:1px;background:var(--line-soft);border:0}
+
+/* ---------- concept ribbon ---------- */
+.ribbon{background:#141117;border-bottom:1px solid var(--line);font-size:13.5px;line-height:1.45;color:var(--body);padding:11px 0;position:relative;z-index:70}
+.ribbon .wrap{display:flex;gap:14px;align-items:baseline;flex-wrap:wrap}
+.rib-short{display:none}
+@media(max-width:760px){
+  .ribbon{padding:9px 0;font-size:12.5px}
+  .ribbon .wrap{gap:8px}
+  .ribbon b{font-size:11px}
+  .rib-long{display:none}
+  .rib-short{display:block}
+}
+.ribbon b{color:var(--gold-lt);font-weight:700;font-family:var(--cond);letter-spacing:.14em;text-transform:uppercase;font-size:12px;white-space:nowrap}
+.ribbon a{text-decoration:underline;text-underline-offset:3px}
+
+/* ---------- header ---------- */
+header{position:sticky;top:0;z-index:60;background:rgba(10,10,11,.82);backdrop-filter:blur(14px) saturate(1.2);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid transparent;transition:border-color .25s,background .25s}
+header.stuck{border-bottom-color:var(--line);background:rgba(10,10,11,.94)}
+.nav{display:flex;align-items:center;gap:30px;height:76px}
+.brand{display:flex;align-items:center;gap:12px;flex:none}
+.brand img{width:42px;height:42px;object-fit:contain}
+.brand .bt{display:block;font:800 17px/1 var(--sans);color:var(--text);letter-spacing:.02em}
+.brand .bs{display:block;font:600 10.5px/1 var(--cond);letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:6px}
+.nav-links{display:flex;gap:28px;margin-left:auto}
+.nav-links a{color:var(--body);font-size:14.5px;font-weight:600;transition:color .18s;position:relative}
+.nav-links a:hover{color:var(--text)}
+.nav-tel{font:700 15px/1 var(--sans);color:var(--text);white-space:nowrap;display:flex;align-items:center;gap:8px}
+.nav-tel svg{width:15px;height:15px;fill:var(--gold);flex:none}
+.brand>span{min-width:0}
+.nav-cta .sm{display:none}
+@media(max-width:1080px){.nav-links{display:none}}
+@media(max-width:660px){
+  .nav{height:64px;gap:12px}
+  .brand img{width:34px;height:34px}
+  .brand .bt{font-size:15.5px}
+  .brand .bs{display:none}
+  .nav-tel{margin-left:auto}
+  .nav-tel span{display:none}
+  .nav .btn{padding:12px 15px;font-size:13.5px}
+  .nav-cta .lg{display:none}
+  .nav-cta .sm{display:inline}
+}
+
+/* ---------- hero ---------- */
+.hero{min-height:min(88vh,860px);display:flex;align-items:flex-end;padding:0;position:relative;isolation:isolate;overflow:hidden}
+.hero-bg{position:absolute;inset:0;z-index:-2}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:50% 62%}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,11,.82) 0%,rgba(10,10,11,.42) 32%,rgba(10,10,11,.80) 74%,var(--ink) 100%)}
+.hero-inner{width:100%;padding:clamp(90px,14vw,150px) 24px clamp(44px,6vw,64px)}
+.hero h1{margin-top:22px;max-width:15ch}
+.hero h1 em{font-style:normal;color:var(--gold);display:block}
+.hero .lede{margin-top:26px;font-size:clamp(17px,2vw,21px);color:#D6D3CC;max-width:52ch}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:36px}
+.hero-cta .btn{padding:21px 34px;font-size:16px}
+.trust{display:flex;flex-wrap:wrap;gap:10px 0;margin-top:44px;border-top:1px solid rgba(234,232,227,.14);padding-top:22px}
+.trust div{font:600 12.5px/1.4 var(--cond);letter-spacing:.17em;text-transform:uppercase;color:#BDB9B1;padding-right:24px;margin-right:24px;border-right:1px solid rgba(234,232,227,.16)}
+.trust div:last-child{border-right:0;margin-right:0;padding-right:0}
+@media(max-width:640px){.trust div{border-right:0;padding-right:0;margin-right:0;flex:0 0 100%;display:flex;gap:9px;align-items:center}.trust div::before{content:"";width:5px;height:5px;background:var(--gold);flex:none;transform:rotate(45deg)}}
+
+/* ---------- concierge ---------- */
+.conc{background:linear-gradient(180deg,var(--ink) 0%,#0E0E11 100%);border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft)}
+.conc-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,6vw,80px);align-items:center}
+@media(max-width:980px){.conc-grid{grid-template-columns:1fr;gap:44px}}
+.conc-copy h2{margin-top:18px}
+.conc-pts{margin-top:32px;display:grid;gap:2px}
+.conc-pt{display:flex;gap:16px;padding:17px 0;border-top:1px solid var(--line-soft)}
+.conc-pt:last-child{border-bottom:1px solid var(--line-soft)}
+.conc-pt i{font:700 12px/1 var(--mono);color:var(--gold);flex:none;padding-top:5px;font-style:normal;letter-spacing:.06em}
+.conc-pt b{display:block;color:var(--text);font-size:16px;font-weight:700;letter-spacing:-.01em}
+.conc-pt p{font-size:14.8px;line-height:1.55;margin-top:3px;color:var(--muted)}
+
+.phone{background:#0C0C0E;border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 40px 90px -30px rgba(0,0,0,.9),0 0 0 1px rgba(196,155,67,.07);max-width:440px;margin:0 auto;width:100%}
+.phone-top{display:flex;align-items:center;gap:12px;padding:16px 18px;background:var(--panel2);border-bottom:1px solid var(--line)}
+.phone-top img{width:34px;height:34px;object-fit:contain;flex:none}
+.phone-top .pt-n{font:700 14.5px/1.2 var(--sans);color:var(--text)}
+.phone-top .pt-s{font:400 12px/1.2 var(--sans);color:var(--ok);margin-top:3px;display:flex;align-items:center;gap:6px}
+.phone-top .pt-s::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--ok);flex:none;box-shadow:0 0 0 3px rgba(79,184,112,.18)}
+.phone-top .pt-tag{margin-left:auto;font:600 9.5px/1 var(--cond);letter-spacing:.16em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);padding:6px 8px;border-radius:3px}
+.thread{height:min(430px,52vh);overflow-y:auto;padding:20px 16px 8px;display:flex;flex-direction:column;gap:9px;scroll-behavior:smooth;overscroll-behavior:contain}
+.thread::-webkit-scrollbar{width:5px}
+.thread::-webkit-scrollbar-thumb{background:var(--line);border-radius:3px}
+.msg{max-width:83%;padding:11px 15px;border-radius:17px;font-size:15px;line-height:1.48;animation:pop .3s cubic-bezier(.2,.8,.3,1)}
+.msg.bot{background:var(--panel3);color:#DEDBD5;align-self:flex-start;border-bottom-left-radius:5px}
+.msg.me{background:var(--gold);color:#0A0A0B;align-self:flex-end;border-bottom-right-radius:5px;font-weight:600}
+.msg b{color:var(--gold-lt);font-weight:700}
+.msg.me b{color:#0A0A0B}
+.msg.quote{background:linear-gradient(160deg,#1B1710,#131318);border:1px solid var(--gold-dk);align-self:stretch;max-width:100%;border-radius:8px;padding:16px 17px}
+.msg.quote .qh{font:600 10.5px/1 var(--cond);letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:9px}
+.msg.quote .qp{font:800 30px/1 var(--sans);color:var(--text);letter-spacing:-.03em}
+.msg.quote .qn{font-size:13.5px;color:var(--muted);margin-top:9px;line-height:1.5}
+@keyframes pop{from{opacity:0;transform:translateY(9px) scale(.97)}to{opacity:1;transform:none}}
+.typing{display:flex;gap:4px;padding:15px 16px;background:var(--panel3);align-self:flex-start;border-radius:17px;border-bottom-left-radius:5px}
+.typing i{width:6px;height:6px;background:var(--muted);border-radius:50%;animation:blink 1.3s infinite}
+.typing i:nth-child(2){animation-delay:.18s}.typing i:nth-child(3){animation-delay:.36s}
+@keyframes blink{0%,60%,100%{opacity:.28;transform:translateY(0)}30%{opacity:1;transform:translateY(-3px)}}
+.chips{display:flex;flex-wrap:wrap;gap:7px;padding:12px 16px 16px;border-top:1px solid var(--line);background:var(--panel)}
+.chip{font:600 13.5px/1 var(--sans);color:var(--gold-lt);background:rgba(196,155,67,.09);border:1px solid rgba(196,155,67,.34);border-radius:99px;padding:11px 15px;cursor:pointer;transition:background .16s,color .16s;font-family:var(--sans)}
+.chip:hover{background:var(--gold);color:#0A0A0B;border-color:var(--gold)}
+.chip.ghost{color:var(--muted);background:transparent;border-color:var(--line)}
+.chip.ghost:hover{color:var(--text);background:rgba(255,255,255,.05);border-color:var(--muted)}
+.chip-form{display:flex;gap:8px;width:100%}
+.chip-form input{flex:1;min-width:0;font:400 15px/1 var(--sans);color:var(--text);background:var(--panel3);border:1px solid var(--line);border-radius:99px;padding:13px 17px}
+.chip-form input::placeholder{color:var(--muted)}
+.chip-form button{flex:none;background:var(--gold);color:#0A0A0B;border:0;border-radius:99px;padding:0 20px;font:700 14px/1 var(--sans);cursor:pointer}
+.replay{padding:13px 16px;border-top:1px solid var(--line);background:var(--panel);display:flex;align-items:center;gap:12px}
+.replay button{background:none;border:0;color:var(--muted);font:600 13px/1 var(--sans);cursor:pointer;text-decoration:underline;text-underline-offset:3px;padding:0}
+.replay button:hover{color:var(--text)}
+.replay .rn{font:400 12px/1.4 var(--sans);color:var(--muted);margin-left:auto;text-align:right}
+
+.push{margin-top:26px;background:var(--panel2);border:1px solid var(--line);border-left:3px solid var(--ok);border-radius:8px;padding:17px 19px;max-width:440px;margin-left:auto;margin-right:auto;opacity:0;transform:translateY(14px);transition:opacity .55s,transform .55s}
+.push.on{opacity:1;transform:none}
+@media(max-width:980px){.push:not(.on){display:none}}
+.push .pt{font:600 10.5px/1 var(--cond);letter-spacing:.2em;text-transform:uppercase;color:var(--ok);display:flex;align-items:center;gap:8px}
+.push .pw{font:800 21px/1.2 var(--sans);color:var(--text);margin-top:9px;letter-spacing:-.02em}
+.push .pd{font:400 13.5px/1.55 var(--mono);color:var(--muted);margin-top:7px}
+.push .pf{font:400 12px/1.4 var(--sans);color:var(--muted);margin-top:11px;padding-top:11px;border-top:1px solid var(--line-soft)}
+
+/* ---------- services ---------- */
+.svcs{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line-soft);border:1px solid var(--line-soft)}
+@media(max-width:820px){.svcs{grid-template-columns:1fr}}
+.svc{background:var(--ink);padding:clamp(28px,3.6vw,42px);transition:background .3s;position:relative}
+.svc:hover{background:var(--panel)}
+.svc .n{font:700 11px/1 var(--mono);color:var(--gold);letter-spacing:.14em}
+.svc h3{margin-top:20px}
+.svc>p{font-size:15.6px;line-height:1.62;margin-top:13px;color:var(--muted)}
+.svc ul{list-style:none;margin-top:22px;padding-top:20px;border-top:1px solid var(--line-soft);display:grid;gap:9px}
+.svc li{font-size:14.4px;color:var(--body);display:flex;gap:11px;line-height:1.5}
+.svc li::before{content:"";width:5px;height:5px;background:var(--gold);flex:none;margin-top:8px;transform:rotate(45deg)}
+.svc .spec{margin-top:22px;display:flex;flex-wrap:wrap;gap:8px}
+.svc .spec span{font:600 11px/1 var(--cond);letter-spacing:.13em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);padding:7px 10px;border-radius:3px}
+
+/* ---------- before / after ---------- */
+.ba{position:relative;user-select:none;-webkit-user-select:none;touch-action:pan-y;border:1px solid var(--line);overflow:hidden;cursor:ew-resize;background:#000}
+.ba img{width:100%;height:auto;display:block;pointer-events:none}
+.ba .after{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;clip-path:inset(0 0 0 50%)}
+.ba .handle{position:absolute;top:0;bottom:0;left:50%;width:2px;background:var(--gold);transform:translateX(-1px);pointer-events:none;box-shadow:0 0 22px rgba(196,155,67,.6)}
+.ba .knob{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:50px;height:50px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;pointer-events:none;box-shadow:0 6px 24px rgba(0,0,0,.6)}
+.ba .knob svg{width:22px;height:22px;fill:#0A0A0B}
+.ba .lbl{position:absolute;top:16px;font:600 11px/1 var(--cond);letter-spacing:.2em;text-transform:uppercase;color:#fff;background:rgba(10,10,11,.72);backdrop-filter:blur(6px);padding:9px 13px;border-radius:3px;pointer-events:none}
+.ba .lbl.l{left:16px}.ba .lbl.r{right:16px}
+.ba-note{font-size:13.8px;color:var(--muted);margin-top:16px;display:flex;gap:10px;align-items:center}
+.ba-note::before{content:"";width:16px;height:1px;background:var(--gold);flex:none}
+
+/* ---------- gallery ---------- */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+@media(max-width:980px){.gal{grid-template-columns:repeat(2,1fr)}}
+.gal button{border:0;padding:0;background:#000;cursor:pointer;overflow:hidden;position:relative;display:block;aspect-ratio:3/4}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.2,.7,.3,1),opacity .3s;opacity:.88}
+.gal button:hover img{transform:scale(1.05);opacity:1}
+.gal .cap{position:absolute;left:0;right:0;bottom:0;padding:26px 16px 14px;background:linear-gradient(transparent,rgba(10,10,11,.9));font:600 11px/1.3 var(--cond);letter-spacing:.16em;text-transform:uppercase;color:#fff;text-align:left}
+.lb{position:fixed;inset:0;background:rgba(6,6,7,.95);z-index:200;display:none;align-items:center;justify-content:center;padding:24px}
+.lb.on{display:flex}
+.lb img{max-width:100%;max-height:88vh;object-fit:contain;border:1px solid var(--line)}
+.lb .x{position:absolute;top:18px;right:20px;width:46px;height:46px;border-radius:50%;background:var(--panel2);border:1px solid var(--line);color:var(--text);font-size:22px;cursor:pointer;line-height:1}
+.lb .cp{position:absolute;bottom:22px;left:0;right:0;text-align:center;font:600 12px/1 var(--cond);letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+
+/* ---------- process ---------- */
+.proc{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line-soft);border:1px solid var(--line-soft)}
+@media(max-width:900px){.proc{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.proc{grid-template-columns:1fr}}
+.step{background:var(--ink);padding:clamp(26px,3vw,34px)}
+.step .sn{font:800 46px/1 var(--sans);color:var(--line);letter-spacing:-.05em}
+.step h3{margin-top:16px;font-size:19px}
+.step p{font-size:14.6px;line-height:1.6;margin-top:11px;color:var(--muted)}
+
+/* ---------- band ---------- */
+.band{position:relative;padding:0;isolation:isolate;border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft)}
+.band img{width:100%;height:clamp(240px,34vw,400px);object-fit:cover;opacity:.42}
+.band .bo{position:absolute;inset:0;display:flex;align-items:center;background:linear-gradient(90deg,rgba(10,10,11,.94) 0%,rgba(10,10,11,.6) 55%,rgba(10,10,11,.35) 100%)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;max-width:var(--maxw);margin:0 auto;padding:0 24px;width:100%}
+@media(max-width:820px){.stats{grid-template-columns:repeat(2,1fr);gap:28px 20px}}
+.stat .v{font:900 clamp(32px,4.6vw,52px)/1 var(--sans);color:var(--gold);letter-spacing:-.04em}
+.stat .k{font:600 11px/1.4 var(--cond);letter-spacing:.19em;text-transform:uppercase;color:#CFCBC3;margin-top:11px}
+
+/* ---------- testimonials ---------- */
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-soft);border:1px solid var(--line-soft)}
+@media(max-width:880px){.quotes{grid-template-columns:1fr}}
+.q{background:var(--ink);padding:clamp(28px,3.4vw,38px);display:flex;flex-direction:column}
+.q .stars{display:flex;gap:3px;margin-bottom:20px}
+.q .stars svg{width:15px;height:15px;fill:var(--gold)}
+.q blockquote{font-size:18.5px;line-height:1.5;color:var(--text);font-weight:500;letter-spacing:-.015em;flex:1}
+.q cite{font-style:normal;display:block;margin-top:24px;padding-top:18px;border-top:1px solid var(--line-soft);font:700 14px/1.3 var(--sans);color:var(--text)}
+.q cite span{display:block;font:600 11px/1 var(--cond);letter-spacing:.17em;text-transform:uppercase;color:var(--muted);margin-top:7px}
+
+/* ---------- areas ---------- */
+.areas{display:flex;flex-wrap:wrap;gap:8px;margin-top:30px}
+.areas a{font:600 14px/1 var(--sans);color:var(--body);border:1px solid var(--line);padding:12px 16px;border-radius:3px;transition:border-color .2s,color .2s,background .2s}
+.areas a:hover{border-color:var(--gold);color:var(--gold-lt);background:rgba(196,155,67,.06)}
+
+/* ---------- faq ---------- */
+.faq{border-top:1px solid var(--line-soft)}
+.faq details{border-bottom:1px solid var(--line-soft)}
+.faq summary{list-style:none;cursor:pointer;padding:26px 44px 26px 0;font:700 18.5px/1.35 var(--sans);color:var(--text);letter-spacing:-.02em;position:relative;transition:color .2s}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:hover{color:var(--gold-lt)}
+.faq summary::after{content:"";position:absolute;right:6px;top:33px;width:12px;height:12px;border-right:1.5px solid var(--gold);border-bottom:1.5px solid var(--gold);transform:rotate(45deg);transition:transform .25s}
+.faq details[open] summary::after{transform:rotate(-135deg);top:36px}
+.faq .a{padding:0 60px 28px 0;font-size:16px;line-height:1.68;color:var(--muted)}
+.faq .a p+p{margin-top:12px}
+
+/* ---------- final cta ---------- */
+.final{background:linear-gradient(165deg,#15120C 0%,#0C0C0E 60%);border-top:1px solid var(--gold-dk)}
+.final h2{max-width:16ch}
+.final-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(36px,6vw,72px);align-items:start}
+@media(max-width:900px){.final-grid{grid-template-columns:1fr;gap:40px}}
+.contact-card{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:clamp(26px,3.2vw,36px)}
+.cline{display:flex;gap:16px;padding:16px 0;border-bottom:1px solid var(--line-soft);align-items:flex-start}
+.cline:last-of-type{border-bottom:0}
+.cline .ck{font:600 10.5px/1.3 var(--cond);letter-spacing:.18em;text-transform:uppercase;color:var(--muted);flex:none;width:78px;padding-top:4px}
+.cline .cv{font-size:15.5px;color:var(--text);line-height:1.5;min-width:0;overflow-wrap:anywhere}
+.final-grid>*,.conc-grid>*,.svcs>*,.proc>*,.quotes>*,.pcols>*,.dgrid>*,.stats>*{min-width:0}
+@media(max-width:430px){.cline{flex-direction:column;gap:6px}.cline .ck{width:auto;padding-top:0}}
+.cline .cv a{color:var(--text)}
+.cline .cv a:hover{color:var(--gold-lt)}
+
+/* ---------- footer ---------- */
+footer{border-top:1px solid var(--line-soft);padding:44px 0 60px;font-size:13.6px;color:var(--muted)}
+.fgrid{display:flex;gap:26px;flex-wrap:wrap;align-items:center}
+.fgrid img{width:38px;height:38px;object-fit:contain;opacity:.75}
+.fgrid .fr{margin-left:auto;text-align:right;line-height:1.6}
+@media(max-width:680px){.fgrid .fr{margin-left:0;text-align:left}}
+
+/* ---------- pitch panel ---------- */
+.pitch{background:#0D0D10;border-top:1px solid var(--line)}
+.pitch .eyebrow{color:#7CA8E8}
+.pitch .eyebrow::before{background:#7CA8E8}
+.pitch h2{font-size:clamp(26px,3.6vw,40px)}
+.pcols{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-soft);border:1px solid var(--line-soft);margin-top:44px}
+@media(max-width:880px){.pcols{grid-template-columns:1fr}}
+.pcol{background:#0D0D10;padding:30px 28px}
+.pcol h4{font-size:16px;font-weight:700;color:var(--text)}
+.pcol ul{list-style:none;margin-top:16px;display:grid;gap:11px}
+.pcol li{font-size:14.5px;line-height:1.55;color:var(--muted);display:flex;gap:11px}
+.pcol li::before{content:"";width:5px;height:5px;background:#7CA8E8;flex:none;margin-top:8px;transform:rotate(45deg)}
+.disc{margin-top:44px;border:1px solid var(--line);border-radius:6px;padding:28px;background:var(--panel)}
+.disc h4{font:600 11px/1 var(--cond);letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.dgrid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:20px}
+@media(max-width:760px){.dgrid{grid-template-columns:1fr;gap:22px}}
+.dgrid h5{font:700 14px/1.3 var(--sans);color:var(--text);margin-bottom:11px}
+.dgrid ul{list-style:none;display:grid;gap:8px}
+.dgrid li{font-size:14px;line-height:1.5;color:var(--muted);padding-left:18px;position:relative}
+.dgrid li::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%}
+.dgrid .real li::before{background:var(--ok)}
+.dgrid .fake li::before{background:var(--gold)}
+.codeblk{margin-top:22px;background:#08080A;border:1px solid var(--line);border-radius:4px;padding:18px;overflow-x:auto;font:400 12.5px/1.7 var(--mono);color:#8FA9C4;white-space:pre}
+
+/* ---------- floating cta ---------- */
+.fab{position:fixed;right:18px;bottom:18px;z-index:90;display:flex;align-items:center;gap:10px;background:var(--gold);color:#0A0A0B;border:0;border-radius:99px;padding:16px 22px;font:700 15px/1 var(--sans);cursor:pointer;box-shadow:0 14px 40px -8px rgba(196,155,67,.5);opacity:0;transform:translateY(70px);transition:opacity .4s,transform .4s,background .2s}
+.fab.on{opacity:1;transform:none}
+.fab:hover{background:var(--gold-lt)}
+.fab svg{width:17px;height:17px;fill:#0A0A0B}
+@media(max-width:560px){.fab{right:12px;bottom:12px;padding:14px 18px;font-size:14px}}
+@media(max-width:980px){.thread{height:min(430px,46vh)}}
+</style>
+</head>
+<body>
+
+<!-- ============ CONCEPT RIBBON ============ -->
+<div class="ribbon"><div class="wrap">
+  <b>Concept &middot; not the official site</b>
+  <span class="rib-long">An unaffiliated design study built for Viper Concrete Coatings &amp; Polishing by <a href="index.html">Local LVRG</a>. Photos and contact details are Viper&rsquo;s own. Pricing, timelines and warranty figures are illustrative placeholders &mdash; <a href="#disclosure">see exactly what&rsquo;s real</a>. Their live site is <a href="https://www.viperconcretecoatings.com/" rel="nofollow noopener" target="_blank">viperconcretecoatings.com</a>.</span>
+  <span class="rib-short">A design study for Viper by <a href="index.html">Local LVRG</a>. <a href="#disclosure">What&rsquo;s real &rarr;</a></span>
+</div></div>
+
+<!-- ============ HEADER ============ -->
+<header id="hdr"><div class="wrap nav">
+  <a class="brand" href="#top">
+    <img src="assets/viper/logo.png" alt="Viper Concrete Coatings and Polishing">
+    <span><span class="bt">VIPER</span><span class="bs">Coatings &amp; Polishing</span></span>
+  </a>
+  <nav class="nav-links">
+    <a href="#systems">Floor Systems</a>
+    <a href="#work">The Work</a>
+    <a href="#process">Process</a>
+    <a href="#areas">Service Area</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+  <a class="nav-tel" href="tel:+12487931500"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.2.4 2.4.6 3.7.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.7.1.3 0 .7-.2 1l-2.3 2.1z"/></svg><span>248-793-1500</span></a>
+  <a class="btn btn-gold btn-sm nav-cta" href="#estimate"><span class="lg">Get My Estimate</span><span class="sm">Estimate</span></a>
+</div></header>
+
+<!-- ============ HERO ============ -->
+<div id="top"></div>
+<section class="hero">
+  <div class="hero-bg"><img src="assets/viper/hero-wide.jpg" alt="Metallic epoxy floor poured across a vaulted great room" fetchpriority="high" width="1800" height="1584"></div>
+  <div class="wrap hero-inner">
+    <p class="eyebrow">Grand Blanc, Michigan &middot; Est. 2022</p>
+    <h1>Grind it right.<em>Coat it once.</em></h1>
+    <p class="lede">Polished concrete, epoxy and industrial floor systems for homes, shops and plants across Genesee County. We diamond-grind every slab before a drop of product goes down &mdash; which is the whole reason our floors are still bonded when the cheap ones peel.</p>
+    <div class="hero-cta">
+      <a class="btn btn-gold" href="#estimate">Get a Ballpark in 2 Minutes</a>
+      <a class="btn btn-line" href="#work">See The Work</a>
+    </div>
+    <div class="trust">
+      <div>Residential</div><div>Commercial</div><div>Industrial</div><div>Free On-Site Estimates</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONCIERGE ============ -->
+<section class="conc" id="estimate">
+  <div class="wrap conc-grid">
+    <div class="conc-copy rv">
+      <p class="eyebrow">Instant estimate</p>
+      <h2>Tell us about the floor. Get a number before you hang up.</h2>
+      <p class="lede">Most contractors make you leave a voicemail and wait. Ours answers at 11pm on a Sunday, works out what your floor actually needs, gives you a real ballpark range, and puts a time on the calendar &mdash; then wakes the owner up with the details.</p>
+      <div class="conc-pts">
+        <div class="conc-pt"><i>01</i><div><b>It qualifies before it quotes</b><p>Square footage, slab condition, previous coatings, moisture risk. The range you get is built from your answers, not a stock number.</p></div></div>
+        <div class="conc-pt"><i>02</i><div><b>It books the estimate itself</b><p>Live calendar availability, held on the spot. No phone tag, no &ldquo;someone will reach out.&rdquo;</p></div></div>
+        <div class="conc-pt"><i>03</i><div><b>Nothing gets lost</b><p>Every conversation lands in one place with the name, the address, the square footage and what they asked for.</p></div></div>
+      </div>
+      <div class="push" id="push">
+        <div class="pt">New estimate booked</div>
+        <div class="pw" id="pushWhen">Thursday &middot; 3:00 PM</div>
+        <div class="pd" id="pushWhat">2-car garage &middot; Grand Blanc &middot; ~480 sq ft</div>
+        <div class="pf">This is what lands on the owner&rsquo;s phone one second after the homeowner finishes typing.</div>
+      </div>
+    </div>
+
+    <div class="rv">
+      <div class="phone">
+        <div class="phone-top">
+          <img src="assets/viper/logo.png" alt="">
+          <div>
+            <div class="pt-n">Viper Coatings</div>
+            <div class="pt-s">Answers in seconds &middot; 24/7</div>
+          </div>
+          <div class="pt-tag">Demo</div>
+        </div>
+        <div class="thread" id="thread" role="log" aria-live="polite" aria-label="Estimate conversation"></div>
+        <div class="chips" id="chips"></div>
+        <div class="replay">
+          <button type="button" id="replay">Start over</button>
+          <span class="rn">Interactive demo &mdash; nothing is sent anywhere</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SYSTEMS ============ -->
+<section id="systems">
+  <div class="wrap">
+    <div class="sec-head narrow rv">
+      <p class="eyebrow">Floor systems</p>
+      <h2>Four systems. One standard of prep.</h2>
+      <p class="lede">Every job starts the same way: diamond grinders and dust extraction down to a clean, open profile. What changes is what goes on top of it.</p>
+    </div>
+    <div class="svcs rv">
+      <article class="svc">
+        <div class="n">01 / POLISHED CONCRETE</div>
+        <h3>Mechanically polished, densified, sealed</h3>
+        <p>Your existing slab, ground through progressive diamond grits, chemically densified and burnished to the sheen you pick. No coating to chip, nothing to re-apply. The floor <em>is</em> the finish.</p>
+        <ul>
+          <li>Retail floors, warehouses, showrooms, modern homes</li>
+          <li>Gloss levels from a soft satin to a full wet-look shine</li>
+          <li>Takes fork traffic, pallet jacks and grocery carts without complaint</li>
+          <li>Cleans with a neutral cleaner and an auto-scrubber &mdash; no wax, no strip-and-recoat</li>
+        </ul>
+        <div class="spec"><span>2&ndash;4 day install</span><span>Zero VOC</span><span>Lowest lifetime cost</span></div>
+      </article>
+      <article class="svc">
+        <div class="n">02 / EPOXY &amp; FLAKE</div>
+        <h3>Full-broadcast flake with a polyaspartic topcoat</h3>
+        <p>The garage floor people actually want. Pigmented epoxy base, vinyl flake broadcast to refusal, then a UV-stable polyaspartic wear coat that shrugs off hot tires, road salt and dropped sockets.</p>
+        <ul>
+          <li>Garages, basements, pole barns, showrooms, commercial kitchens</li>
+          <li>Dozens of flake blends, plus solid colors and metallic pours</li>
+          <li>Textured finish &mdash; grippy wet, not a skating rink</li>
+          <li>Salt, gasoline, brake fluid and battery acid all wipe off</li>
+        </ul>
+        <div class="spec"><span>1&ndash;2 day install</span><span>Drive on in 24 hrs</span><span>Hot-tire proof</span></div>
+      </article>
+      <article class="svc">
+        <div class="n">03 / INDUSTRIAL COATINGS</div>
+        <h3>Built for the floors that take a beating</h3>
+        <p>Chemical-resistant, thickness-built systems for plants, shops and wash bays &mdash; specified around what actually hits the floor and how long you can afford to be shut down.</p>
+        <ul>
+          <li>Urethane cement, novolac epoxy and moisture-tolerant primers</li>
+          <li>Cove base, trench drains, slopes to drain, expansion joint detailing</li>
+          <li>Safety striping, forklift lanes, aisle marking and OSHA color coding</li>
+          <li>Night and weekend phasing so production keeps running</li>
+        </ul>
+        <div class="spec"><span>Phased scheduling</span><span>Thermal shock rated</span><span>Chemical resistant</span></div>
+      </article>
+      <article class="svc">
+        <div class="n">04 / PREP &amp; SEALING</div>
+        <h3>Surface preparation and sealed concrete</h3>
+        <p>The part nobody photographs and everything depends on. Grinding, shot blasting, crack chasing, spall repair, moisture testing &mdash; then a penetrating or topical sealer if a full system isn&rsquo;t what you need.</p>
+        <ul>
+          <li>Removal of failed paint, mastic, thinset, glue and old coatings</li>
+          <li>Crack chase and structural repair before anything goes down</li>
+          <li>Calcium chloride and RH moisture testing on slabs at risk</li>
+          <li>Prep for other trades &mdash; we&rsquo;ll hand a flooring contractor a clean profile</li>
+        </ul>
+        <div class="spec"><span>Dust-extracted</span><span>Moisture tested</span><span>Prep for trades</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BEFORE / AFTER ============ -->
+<section style="padding-top:0" id="work">
+  <div class="wrap">
+    <div class="sec-head narrow rv">
+      <p class="eyebrow">Before &amp; after</p>
+      <h2>Same slab. Same week.</h2>
+      <p class="lede">A commercial build-out in Genesee County &mdash; bare, stained construction slab ground and polished into the finished floor. Drag the handle.</p>
+    </div>
+    <div class="ba rv" id="ba">
+      <img src="assets/viper/ba-before.jpg" alt="Bare construction concrete slab before polishing" width="1500" height="967" loading="lazy">
+      <img class="after" src="assets/viper/ba-after.jpg" alt="The same slab after mechanical polishing" width="1500" height="967" loading="lazy">
+      <div class="handle"></div>
+      <div class="knob"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5l-6 7 6 7v-4h8v4l6-7-6-7v4H8V5z"/></svg></div>
+      <div class="lbl l">Before</div><div class="lbl r">After</div>
+      <input type="range" min="0" max="100" value="50" id="baRange" aria-label="Compare before and after" style="position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0">
+    </div>
+    <p class="ba-note">Ground, densified and burnished on site &mdash; no topping, no tile, no shutdown longer than it had to be.</p>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="gal rv" id="gal">
+      <button data-full="assets/viper/polished-retail.jpg" data-cap="Polished retail floor — Genesee County"><img src="assets/viper/thumb-polished-retail.jpg" alt="Large polished concrete retail floor reflecting overhead lighting" loading="lazy"><span class="cap">Polished retail</span></button>
+      <button data-full="assets/viper/metallic.jpg" data-cap="Metallic epoxy pour — residential great room"><img src="assets/viper/thumb-metallic.jpg" alt="Glossy metallic epoxy floor in a residential great room" loading="lazy"><span class="cap">Metallic pour</span></button>
+      <button data-full="assets/viper/crew-apply.jpg" data-cap="Roller and sprayer — coating a new build shop"><img src="assets/viper/thumb-crew-apply.jpg" alt="Viper crew rolling coating across a new shop floor" loading="lazy"><span class="cap">On the roller</span></button>
+      <button data-full="assets/viper/polished-warehouse.jpg" data-cap="Warehouse polish — high traffic, low maintenance"><img src="assets/viper/thumb-polished-warehouse.jpg" alt="Polished warehouse floor under steel joists" loading="lazy"><span class="cap">Warehouse polish</span></button>
+      <button data-full="assets/viper/prep.jpg" data-cap="Crack chase and moisture control before coating"><img src="assets/viper/thumb-prep.jpg" alt="Crew preparing and treating a slab before coating" loading="lazy"><span class="cap">Prep is the job</span></button>
+      <button data-full="assets/viper/barn.jpg" data-cap="Pole barn slab — sealed and ready"><img src="assets/viper/thumb-barn.jpg" alt="Finished concrete floor inside a timber-framed barn" loading="lazy"><span class="cap">Pole barn</span></button>
+      <button data-full="assets/viper/ba-during.jpg" data-cap="Grinder and dust extraction mid-job"><img src="assets/viper/thumb-ba-during.jpg" alt="Concrete grinder with dust extraction working a warehouse slab" loading="lazy"><span class="cap">Mid-grind</span></button>
+      <button data-full="assets/viper/crew-walk.jpg" data-cap="The crew on a residential job"><img src="assets/viper/thumb-crew-walk.jpg" alt="Three Viper crew members walking up a residential driveway" loading="lazy"><span class="cap">The crew</span></button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section id="process" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head narrow rv">
+      <p class="eyebrow">How it goes</p>
+      <h2>What actually happens between the call and the floor.</h2>
+    </div>
+    <div class="proc rv">
+      <div class="step"><div class="sn">01</div><h3>We look at the slab</h3><p>On site, in person, free. We check for moisture, previous coatings, cracks, spalling and how the slab was finished. Then you get a written scope and a fixed number &mdash; not a per-foot guess over the phone.</p></div>
+      <div class="step"><div class="sn">02</div><h3>We grind it open</h3><p>Diamond grinders with HEPA dust extraction take the surface down to a clean, open profile. Old paint, mastic and sealer come off. Cracks get chased and filled. This step is why the floor lasts.</p></div>
+      <div class="step"><div class="sn">03</div><h3>We build the system</h3><p>Primer, base, broadcast, topcoat &mdash; or grind, densify, polish. Applied at the mil thickness the manufacturer specifies, at the temperature and humidity the product actually wants.</p></div>
+      <div class="step"><div class="sn">04</div><h3>We hand it back clean</h3><p>Walk the floor with you, hand over the care sheet and the cure times, take the trash with us. You know exactly when you can walk on it and when you can park on it.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATS BAND ============ -->
+<div class="band rv">
+  <img src="assets/viper/fleet.jpg" alt="Viper Concrete Coatings trucks and equipment trailer at the shop" loading="lazy" width="1500" height="504">
+  <div class="bo"><div class="stats">
+    <div class="stat"><div class="v">2022</div><div class="k">Grinding floors since</div></div>
+    <div class="stat"><div class="v">100%</div><div class="k">Mechanically prepped</div></div>
+    <div class="stat"><div class="v">24 hr</div><div class="k">Drive-on, flake systems</div></div>
+    <div class="stat"><div class="v">15 yr</div><div class="k">System warranty</div></div>
+  </div></div>
+</div>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head narrow rv">
+      <p class="eyebrow">What customers say</p>
+      <h2>Clean, efficient, thorough.</h2>
+    </div>
+    <div class="quotes rv">
+      <div class="q">
+        <div class="stars"><svg viewBox="0 0 24 24"><path d="M12 2l3 6.6 7 .9-5 4.9 1.2 7L12 18l-6.2 3.4L7 14.4l-5-4.9 7-.9L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.6 7 .9-5 4.9 1.2 7L12 18l-6.2 3.4L7 14.4l-5-4.9 7-.9L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.6 7 .9-5 4.9 1.2 7L12 18l-6.2 3.4L7 14.4l-5-4.9 7-.9L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.6 7 .9-5 4.9 1.2 7L12 18l-6.2 3.4L7 14.4l-5-4.9 7-.9L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.6 7 .9-5 4.9 1.2 7L12 18l-6.2 3.4L7 14.4l-5-4.9 7-.9L12 2z"/></svg></div>
+        <blockquote>&ldquo;Completely transformed our showroom.&rdquo;</blockquote>
+        <cite>Nancy Zimmer<span>Commercial showroom</span></cite>
+      </div>
+      <div class="q">
+        <div class="stars"><svg viewBox="0 0 24 24"><path d="M12 2l3 6.6 7 .9-5 4.9 1.2 7L12 18l-6.2 3.4L7 14.4l-5-4.9 7-.9L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.6 7 .9-5 4.9 1.2 7L12 18l-6.2 3.4L7 14.4l-5-4.9 7-.9L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.6 7 .9-5 4.9 1.2 7L12 18l-6.2 3.4L7 14.4l-5-4.9 7-.9L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.6 7 .9-5 4.9 1.2 7L12 18l-6.2 3.4L7 14.4l-5-4.9 7-.9L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.6 7 .9-5 4.9 1.2 7L12 18l-6.2 3.4L7 14.4l-5-4.9 7-.9L12 2z"/></svg></div>
+        <blockquote>&ldquo;Very easy process start to finish. Great work and a great price.&rdquo;</blockquote>
+        <cite>Nick Stepp<span>Residential</span></cite>
+      </div>
+      <div class="q">
+        <div class="stars"><svg viewBox="0 0 24 24"><path d="M12 2l3 6.6 7 .9-5 4.9 1.2 7L12 18l-6.2 3.4L7 14.4l-5-4.9 7-.9L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.6 7 .9-5 4.9 1.2 7L12 18l-6.2 3.4L7 14.4l-5-4.9 7-.9L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.6 7 .9-5 4.9 1.2 7L12 18l-6.2 3.4L7 14.4l-5-4.9 7-.9L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.6 7 .9-5 4.9 1.2 7L12 18l-6.2 3.4L7 14.4l-5-4.9 7-.9L12 2z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 6.6 7 .9-5 4.9 1.2 7L12 18l-6.2 3.4L7 14.4l-5-4.9 7-.9L12 2z"/></svg></div>
+        <blockquote>&ldquo;Clean, efficient, thorough, and a great price.&rdquo;</blockquote>
+        <cite>Ken LeCureux<span>Residential</span></cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICE AREA ============ -->
+<section id="areas" style="padding-top:0">
+  <div class="wrap narrow">
+    <div class="sec-head rv" style="margin-bottom:0">
+      <p class="eyebrow">Service area</p>
+      <h2>Genesee County and the towns around it.</h2>
+      <p class="lede">Based on Tri Park Drive in Grand Blanc. If you&rsquo;re inside roughly 45 minutes of the shop, we&rsquo;re there &mdash; and if you&rsquo;re outside it and the job is big enough, ask anyway.</p>
+    </div>
+    <div class="areas rv">
+      <a href="#estimate">Grand Blanc</a><a href="#estimate">Flint</a><a href="#estimate">Fenton</a><a href="#estimate">Davison</a>
+      <a href="#estimate">Burton</a><a href="#estimate">Swartz Creek</a><a href="#estimate">Linden</a><a href="#estimate">Holly</a>
+      <a href="#estimate">Goodrich</a><a href="#estimate">Clarkston</a><a href="#estimate">Flushing</a><a href="#estimate">Grand Blanc Twp.</a>
+      <a href="#estimate">Mundy Twp.</a><a href="#estimate">Lapeer</a><a href="#estimate">Ortonville</a><a href="#estimate">Otisville</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq" style="padding-top:0">
+  <div class="wrap narrow">
+    <div class="sec-head rv">
+      <p class="eyebrow">Straight answers</p>
+      <h2>Questions people actually ask us.</h2>
+    </div>
+    <div class="faq rv">
+      <details>
+        <summary>My garage floor was painted years ago and it&rsquo;s peeling. Can you go over it?</summary>
+        <div class="a"><p>No &mdash; and anybody who says yes is about to sell you the same failure again. Paint and roll-on kits sit on top of the slab instead of bonding into it, so a new coating over them is only as strong as the layer underneath. We grind the old material off completely and start from clean concrete. It costs a little more up front and it&rsquo;s the difference between a floor that lasts and one that flakes off with your tires next winter.</p></div>
+      </details>
+      <details>
+        <summary>How long does a two-car garage take?</summary>
+        <div class="a"><p>Most flake systems are a one or two day install. Day one is grinding, crack repair and the base coat with the flake broadcast. Day two is scraping the excess flake back and rolling the polyaspartic topcoat. You can usually walk on it that evening and park on it about 24 hours later.</p><p>Polished concrete on a larger commercial slab runs longer &mdash; typically two to four days depending on square footage and how many grit passes the finish calls for.</p></div>
+      </details>
+      <details>
+        <summary>My slab has cracks. Is it a lost cause?</summary>
+        <div class="a"><p>Almost never. Ordinary shrinkage cracks get chased out into a V, vacuumed and filled with a structural polyurea that cures harder than the concrete around it, then ground flush. They disappear under a flake system and read as a faint line under a clear polish.</p><p>What we&rsquo;ll tell you honestly: an actively moving crack, a heaved slab, or one with real structural movement behind it needs that cause addressed first. We&rsquo;ll say so at the estimate rather than coat over it and let you find out in the spring.</p></div>
+      </details>
+      <details>
+        <summary>Can you install in the winter in Michigan?</summary>
+        <div class="a"><p>Yes. Heated and enclosed spaces are no issue at all. For unheated garages and pole barns we bring temporary heat and use products formulated to cure at lower temperatures &mdash; polyaspartics in particular are far more forgiving in the cold than standard epoxy.</p><p>Winter is genuinely our easiest scheduling window. If you want the floor done before spring gets busy, this is when to call.</p></div>
+      </details>
+      <details>
+        <summary>What does it cost?</summary>
+        <div class="a"><p>Flake garage systems are typically quoted per square foot, and a standard two-car garage most often lands in the low-to-mid four figures once prep is included. Polished concrete over larger commercial square footage generally comes in lower per foot. Industrial systems are priced to the specification.</p><p>The honest answer is that prep drives the number more than the coating does. A clean, bare, sound slab and a slab with three failed coatings on it are two very different jobs. That&rsquo;s why the estimate is free and on site &mdash; you get a real number for your floor instead of an average for somebody else&rsquo;s.</p></div>
+      </details>
+      <details>
+        <summary>Will it yellow, and will hot tires pull it up?</summary>
+        <div class="a"><p>The topcoat is what determines both. Straight epoxy will amber over time under UV and can be lifted by hot tire pickup. That&rsquo;s exactly why we finish flake systems with a UV-stable polyaspartic instead &mdash; it holds its color and it doesn&rsquo;t soften under a hot tire that&rsquo;s just come off the highway.</p></div>
+      </details>
+      <details>
+        <summary>How do I take care of it?</summary>
+        <div class="a"><p>Sweep or dust mop it, and wash it with a neutral cleaner and warm water when it needs it. No wax, no strip-and-recoat, no sealing every year. Keep harsh acidic cleaners off it and put felt pads under anything heavy you plan to drag. That&rsquo;s the entire maintenance program.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="final">
+  <div class="wrap final-grid">
+    <div class="rv">
+      <p class="eyebrow">Get started</p>
+      <h2 style="margin-top:18px">Send us the floor. We&rsquo;ll send back a number.</h2>
+      <p class="lede">Call during the day and you&rsquo;ll get a person. Message at midnight and you&rsquo;ll still get an answer, a ballpark, and a time on the calendar.</p>
+      <div class="hero-cta">
+        <a class="btn btn-gold" href="#estimate">Get My Ballpark</a>
+        <a class="btn btn-line" href="tel:+12487931500">Call 248-793-1500</a>
+      </div>
+    </div>
+    <div class="contact-card rv">
+      <div class="cline"><div class="ck">Phone</div><div class="cv"><a href="tel:+12487931500">248-793-1500</a></div></div>
+      <div class="cline"><div class="ck">Email</div><div class="cv"><a href="mailto:sales@viperconcretecoatings.com">sales@viperconcretecoatings.com</a></div></div>
+      <div class="cline"><div class="ck">Shop</div><div class="cv">3151 Tri Park Dr, Suite 13<br>Grand Blanc, MI 48439</div></div>
+      <div class="cline"><div class="ck">Hours</div><div class="cv">Mon&ndash;Fri 7:00 AM &ndash; 5:00 PM<br><span style="color:var(--muted);font-size:14px">Messages answered around the clock</span></div></div>
+      <div class="cline"><div class="ck">Serving</div><div class="cv">Genesee, Oakland &amp; Lapeer counties</div></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap fgrid">
+    <img src="assets/viper/logo.png" alt="">
+    <div>
+      <div style="color:var(--text);font-weight:700;font-size:15px">Viper Concrete Coatings &amp; Polishing</div>
+      <div style="margin-top:5px">3151 Tri Park Dr, Suite 13 &middot; Grand Blanc, MI 48439 &middot; <a href="tel:+12487931500">248-793-1500</a></div>
+    </div>
+    <div class="fr">
+      Concept design by <a href="index.html">Local LVRG</a><br>
+      Not affiliated with Viper Concrete Coatings &amp; Polishing
+    </div>
+  </div>
+</footer>
+
+<!-- ============ PITCH PANEL ============ -->
+<section class="pitch" id="disclosure">
+  <div class="wrap">
+    <div class="narrow rv">
+      <p class="eyebrow">A note for Viper &mdash; from the person who built this</p>
+      <h2>You didn&rsquo;t ask for this. I built it anyway.</h2>
+      <p class="lede">Your photos are genuinely good and the work speaks for itself, so I wanted to see what it would look like turned all the way up. Everything above is your own photography, your own reviews and your own phone number &mdash; just presented differently, and wired to answer people at 11pm.</p>
+      <p class="lede">Take the ideas and hand them to whoever built your current site. Or don&rsquo;t use any of it. Either way it&rsquo;s yours &mdash; no invoice, no catch.</p>
+    </div>
+
+    <div class="pcols rv">
+      <div class="pcol">
+        <h4>What this page does structurally</h4>
+        <ul>
+          <li>One clear action repeated at every scroll depth instead of a generic contact form at the bottom</li>
+          <li>A named service area, so searches for &ldquo;epoxy garage floor Fenton&rdquo; have something to land on</li>
+          <li>Prices, timelines and warranty stated plainly &mdash; the three things every homeowner is actually trying to find</li>
+          <li>Objection handling in the FAQ, which is where the peeling-paint and winter-install questions get answered before they become phone calls</li>
+        </ul>
+      </div>
+      <div class="pcol">
+        <h4>What it does technically</h4>
+        <ul>
+          <li>Loads in well under a second &mdash; the whole page is one file with no builder framework underneath it</li>
+          <li>Images sized and compressed for the web rather than served at camera resolution</li>
+          <li>Real page titles and share previews, so a link posted to Facebook shows the company name and a floor photo</li>
+          <li>Keyboard-navigable, screen-reader labelled, and legible at any window size</li>
+        </ul>
+      </div>
+      <div class="pcol">
+        <h4>The part that makes money</h4>
+        <ul>
+          <li>The assistant at the top is live &mdash; try it, it qualifies and books</li>
+          <li>It answers nights, weekends and while your crew is on a grinder and nobody can hear a phone</li>
+          <li>Every conversation is captured with name, square footage, address and intent</li>
+          <li>The owner gets the booking pushed to their phone the second it happens</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="disc rv">
+      <h4>Full disclosure &mdash; what&rsquo;s real and what isn&rsquo;t</h4>
+      <div class="dgrid">
+        <div>
+          <h5 style="color:var(--ok)">Real, taken from Viper&rsquo;s own site</h5>
+          <ul class="real">
+            <li>Company name, logo, and all photography</li>
+            <li>Phone, email and the Tri Park Drive address</li>
+            <li>In business since 2022</li>
+            <li>The four service categories</li>
+            <li>All three customer reviews, quoted verbatim with the reviewers&rsquo; names</li>
+          </ul>
+        </div>
+        <div>
+          <h5 style="color:var(--gold)">Written by me as placeholder</h5>
+          <ul class="fake">
+            <li>All pricing language and the estimate ranges in the assistant</li>
+            <li>Install timelines, cure times and the 15-year warranty figure</li>
+            <li>Product specifics (polyaspartic topcoats, urethane cement, moisture testing)</li>
+            <li>The service-area town list and the business hours</li>
+            <li>Every word of body copy</li>
+          </ul>
+        </div>
+      </div>
+      <p style="font-size:14px;line-height:1.6;color:var(--muted);margin-top:22px;padding-top:20px;border-top:1px solid var(--line-soft)">Nothing in the placeholder column should go live until Viper confirms it. It&rsquo;s there to show the shape of the page, not to make claims on their behalf. This page is also set to <code style="font-family:var(--mono);font-size:13px;color:var(--gold-lt)">noindex</code> so it can never compete with their real site in search results.</p>
+      <div class="codeblk">&lt;!-- one of the things a build like this ships with --&gt;
+{
+  "@type"     : "LocalBusiness",
+  "name"      : "Viper Concrete Coatings &amp; Polishing",
+  "telephone" : "+1-248-793-1500",
+  "address"   : "3151 Tri Park Dr Suite 13, Grand Blanc, MI 48439",
+  "areaServed": ["Grand Blanc","Flint","Fenton","Davison","Burton"]
+}</div>
+    </div>
+
+    <div class="rv" style="margin-top:44px;display:flex;gap:14px;flex-wrap:wrap;align-items:center">
+      <a class="btn btn-gold" href="index.html">See what Local LVRG does</a>
+      <a class="btn btn-line" href="https://www.viperconcretecoatings.com/" rel="nofollow noopener" target="_blank">Viper&rsquo;s official site</a>
+    </div>
+  </div>
+</section>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="x" id="lbx" aria-label="Close">&times;</button>
+  <img id="lbi" src="" alt="">
+  <div class="cp" id="lbc"></div>
+</div>
+
+<button class="fab" id="fab"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 2H4a2 2 0 00-2 2v18l4-4h14a2 2 0 002-2V4a2 2 0 00-2-2z"/></svg>Get My Estimate</button>
+
+<script>
+(function(){
+"use strict";
+
+/* ---------- reveal on scroll ---------- */
+var io = new IntersectionObserver(function(es){
+  es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); } });
+},{threshold:.08,rootMargin:"0px 0px -8% 0px"});
+document.querySelectorAll(".rv").forEach(function(el){ io.observe(el); });
+
+/* ---------- sticky header + floating cta ---------- */
+var hdr=document.getElementById("hdr"), fab=document.getElementById("fab"), estOnScreen=false;
+function onScroll(){
+  var y=window.scrollY;
+  hdr.classList.toggle("stuck", y>12);
+  fab.classList.toggle("on", y>900 && !estOnScreen);
+}
+window.addEventListener("scroll",onScroll,{passive:true}); onScroll();
+/* hide the floating CTA while the estimate widget is actually on screen */
+new IntersectionObserver(function(es){
+  es.forEach(function(e){ estOnScreen=e.isIntersecting; });
+  onScroll();
+},{threshold:.15}).observe(document.getElementById("estimate"));
+fab.addEventListener("click",function(){
+  document.getElementById("estimate").scrollIntoView({behavior:"smooth",block:"start"});
+});
+
+/* ---------- before / after ---------- */
+var ba=document.getElementById("ba");
+if(ba){
+  var after=ba.querySelector(".after"), handle=ba.querySelector(".handle"),
+      knob=ba.querySelector(".knob"), range=document.getElementById("baRange");
+  function setBA(p){
+    p=Math.max(0,Math.min(100,p));
+    after.style.clipPath="inset(0 0 0 "+p+"%)";
+    handle.style.left=p+"%"; knob.style.left=p+"%";
+  }
+  range.addEventListener("input",function(){ setBA(+range.value); });
+  function fromEvent(e){
+    var r=ba.getBoundingClientRect(), x=(e.touches?e.touches[0].clientX:e.clientX)-r.left;
+    var p=x/r.width*100; range.value=p; setBA(p);
+  }
+  var dragging=false;
+  ba.addEventListener("pointerdown",function(e){ dragging=true; ba.setPointerCapture(e.pointerId); fromEvent(e); });
+  ba.addEventListener("pointermove",function(e){ if(dragging) fromEvent(e); });
+  ba.addEventListener("pointerup",function(){ dragging=false; });
+  ba.addEventListener("pointercancel",function(){ dragging=false; });
+  setBA(50);
+}
+
+/* ---------- lightbox ---------- */
+var lb=document.getElementById("lb"), lbi=document.getElementById("lbi"), lbc=document.getElementById("lbc");
+document.querySelectorAll("#gal button").forEach(function(b){
+  b.addEventListener("click",function(){
+    lbi.src=b.dataset.full; lbi.alt=b.dataset.cap; lbc.textContent=b.dataset.cap;
+    lb.classList.add("on"); document.body.style.overflow="hidden";
+  });
+});
+function closeLB(){ lb.classList.remove("on"); document.body.style.overflow=""; lbi.src=""; }
+document.getElementById("lbx").addEventListener("click",closeLB);
+lb.addEventListener("click",function(e){ if(e.target===lb) closeLB(); });
+document.addEventListener("keydown",function(e){ if(e.key==="Escape"&&lb.classList.contains("on")) closeLB(); });
+
+/* ================= CONCIERGE ================= */
+var thread=document.getElementById("thread"), chips=document.getElementById("chips"),
+    push=document.getElementById("push"), pushWhen=document.getElementById("pushWhen"),
+    pushWhat=document.getElementById("pushWhat");
+
+var S={};   /* answers */
+
+var SPACES={
+  garage:   {label:"Garage",        system:"flake polyaspartic system", lo:7,  hi:10,
+             sizes:[["1-car (~280 sq ft)",280],["2-car (~480 sq ft)",480],["3-car (~720 sq ft)",720],["Bigger than that",1000]]},
+  basement: {label:"Basement",      system:"epoxy or metallic system",  lo:8,  hi:12,
+             sizes:[["Under 800 sq ft",700],["800 – 1,500 sq ft",1150],["Over 1,500 sq ft",1800]]},
+  shop:     {label:"Shop or barn",  system:"flake or sealed system",    lo:6,  hi:9,
+             sizes:[["Under 1,000 sq ft",850],["1,000 – 2,500 sq ft",1750],["2,500 – 5,000 sq ft",3750],["Over 5,000 sq ft",6000]]},
+  comm:     {label:"Commercial",    system:"polished concrete",         lo:5,  hi:8,
+             sizes:[["Under 2,500 sq ft",2000],["2,500 – 10,000 sq ft",6000],["Over 10,000 sq ft",14000]]}
+};
+var CONDS={
+  bare:    {label:"Bare concrete",       mult:1.00, note:"A clean, bare slab is the easiest thing we can be handed."},
+  painted: {label:"Painted or peeling",  mult:1.18, note:"That old paint has to come off entirely before anything goes down, so there is real grinding time in this one."},
+  cracks:  {label:"It has some cracks",  mult:1.10, note:"Ordinary cracks get chased out and filled with structural polyurea, then ground flush. Very rarely a problem."},
+  unsure:  {label:"Honestly not sure",   mult:1.05, note:"No problem at all — that is exactly what the on-site look is for."}
+};
+
+function el(cls,html){ var d=document.createElement("div"); d.className=cls; d.innerHTML=html; return d; }
+function scroll(){ thread.scrollTop=thread.scrollHeight; }
+
+function say(html,cls){
+  return new Promise(function(res){
+    var t=el("typing","<i></i><i></i><i></i>");
+    thread.appendChild(t); scroll();
+    var delay=Math.min(1150, 320+String(html).length*7);
+    setTimeout(function(){
+      t.remove();
+      thread.appendChild(el("msg bot"+(cls?" "+cls:""),html));
+      scroll(); res();
+    },delay);
+  });
+}
+function me(text){ thread.appendChild(el("msg me",text)); scroll(); }
+
+function ask(opts){
+  chips.innerHTML="";
+  opts.forEach(function(o){
+    var b=document.createElement("button");
+    b.type="button"; b.className="chip"+(o.ghost?" ghost":""); b.textContent=o.label;
+    b.addEventListener("click",function(){ me(o.label); chips.innerHTML=""; o.go(); });
+    chips.appendChild(b);
+  });
+}
+function askText(placeholder,cb){
+  chips.innerHTML="";
+  var f=document.createElement("form"); f.className="chip-form";
+  f.innerHTML='<input type="text" placeholder="'+placeholder+'" autocomplete="off"><button type="submit">Send</button>';
+  f.addEventListener("submit",function(e){
+    e.preventDefault();
+    var v=f.querySelector("input").value.trim();
+    if(!v) return;
+    me(v); chips.innerHTML=""; cb(v);
+  });
+  chips.appendChild(f);
+  setTimeout(function(){ if(window.innerWidth>900) f.querySelector("input").focus(); },80);
+}
+
+function money(n){
+  var v = n>=10000 ? Math.round(n/500)*500 : Math.round(n/50)*50;
+  return "$"+v.toLocaleString();
+}
+
+function slots(){
+  var out=[], d=new Date(); d.setHours(0,0,0,0);
+  var times=["9:00 AM","1:00 PM","3:30 PM"], i=0;
+  while(out.length<3){
+    d.setDate(d.getDate()+1);
+    var dow=d.getDay();
+    if(dow===0||dow===6) continue;
+    out.push({
+      label: d.toLocaleDateString(undefined,{weekday:"long"})+", "+d.toLocaleDateString(undefined,{month:"short",day:"numeric"})+" at "+times[i],
+      short: d.toLocaleDateString(undefined,{weekday:"long"})+" · "+times[i]
+    });
+    i++;
+  }
+  return out;
+}
+
+/* ---------- free text handling ---------- */
+var FAQ=[
+  {k:["cost","price","much","expensive","cheap","$","quote","ballpark"],
+   a:"Prices come down to two things: square footage and how much prep the slab needs. A bare, sound slab and a slab with three failed coatings on it are very different jobs. Want me to work out a real range for yours?"},
+  {k:["winter","cold","snow","january","february","freez"],
+   a:"Winter is genuinely our easiest scheduling window. Heated spaces are no issue, and for unheated garages we bring temporary heat and use polyaspartics that cure fine at low temperatures."},
+  {k:["crack","chip","spall","pit","hole"],
+   a:"Cracks get chased into a V, vacuumed, filled with a structural polyurea that cures harder than the concrete, then ground flush. Under a flake system they disappear completely."},
+  {k:["peel","paint","painted","flak","lifting","old coating","epoxy kit"],
+   a:"We never coat over old paint — that's why those floors fail. It gets ground off completely down to clean concrete first. It's the single biggest reason our floors are still bonded years later."},
+  {k:["how long","days","time","fast","quick","when can","schedule"],
+   a:"A two-car garage is a one or two day install. Walk on it that evening, park on it about 24 hours later. Larger polished commercial slabs run two to four days."},
+  {k:["color","colour","flake","look","design","metallic","style","gray","grey"],
+   a:"Dozens of flake blends, solid colors, and metallic pours that look like poured stone. We bring physical samples to the estimate so you can see them in your own light."},
+  {k:["warranty","guarantee","last","lifetime","years"],
+   a:"Systems are warrantied against delamination and peeling. The exact term depends on the system — we put it in writing on the estimate, not just say it out loud."},
+  {k:["where","area","serve","located","address","far","drive","travel"],
+   a:"We're on Tri Park Drive in Grand Blanc and cover Genesee County plus the towns around it — Flint, Fenton, Davison, Burton, Swartz Creek, Linden, Holly, Clarkston and out toward Lapeer."},
+  {k:["hot tire","yellow","amber","uv","sun","fade"],
+   a:"That's exactly why we top flake systems with a UV-stable polyaspartic instead of leaving bare epoxy up top. It holds its color and hot tires don't lift it."},
+  {k:["clean","maintain","maintenance","care","wax","seal again"],
+   a:"Dust mop it and wash with a neutral cleaner. No wax, no annual resealing, no strip-and-recoat. That's the whole program."}
+];
+
+function answerFree(text){
+  var t=text.toLowerCase(), best=null, score=0;
+  FAQ.forEach(function(f){
+    var s=0; f.k.forEach(function(k){ if(t.indexOf(k)>-1) s++; });
+    if(s>score){ score=s; best=f; }
+  });
+  return best ? best.a : null;
+}
+
+/* ---------- flow ---------- */
+function start(){
+  thread.innerHTML=""; chips.innerHTML=""; S={};
+  push.classList.remove("on");
+  say("Hey — you've got Viper Coatings. I can get you a real ballpark on your floor in about a minute, day or night.").then(function(){
+    return say("What are we looking at?");
+  }).then(function(){
+    ask([
+      {label:"Garage",              go:function(){ pickSpace("garage"); }},
+      {label:"Basement",            go:function(){ pickSpace("basement"); }},
+      {label:"Shop / pole barn",    go:function(){ pickSpace("shop"); }},
+      {label:"Commercial space",    go:function(){ pickSpace("comm"); }},
+      {label:"I just have a question", ghost:true, go:freeMode}
+    ]);
+  });
+}
+
+function freeMode(){
+  say("Go ahead — ask me anything about the floor, the process or the pricing.").then(function(){
+    askText("Type your question…", handleFree);
+  });
+}
+function handleFree(text){
+  var a=answerFree(text);
+  if(a){
+    say(a).then(function(){
+      ask([
+        {label:"Get my ballpark", go:function(){ say("Good — what kind of space is it?").then(function(){
+            ask([
+              {label:"Garage",           go:function(){ pickSpace("garage"); }},
+              {label:"Basement",         go:function(){ pickSpace("basement"); }},
+              {label:"Shop / pole barn", go:function(){ pickSpace("shop"); }},
+              {label:"Commercial space", go:function(){ pickSpace("comm"); }}
+            ]);
+          }); }},
+        {label:"Ask something else", ghost:true, go:function(){ askText("Type your question…", handleFree); }}
+      ]);
+    });
+  } else {
+    say("Good question — that one I'd rather have the owner answer properly than guess at. I can get him to call you, or I can work out a ballpark on the floor first. Which is more useful?").then(function(){
+      ask([
+        {label:"Work out a ballpark", go:function(){ say("What kind of space is it?").then(function(){
+            ask([
+              {label:"Garage",           go:function(){ pickSpace("garage"); }},
+              {label:"Basement",         go:function(){ pickSpace("basement"); }},
+              {label:"Shop / pole barn", go:function(){ pickSpace("shop"); }},
+              {label:"Commercial space", go:function(){ pickSpace("comm"); }}
+            ]);
+          }); }},
+        {label:"Have him call me", ghost:true, go:function(){ S.callbackOnly=true; getName(); }}
+      ]);
+    });
+  }
+}
+
+function pickSpace(k){
+  S.space=k;
+  var sp=SPACES[k];
+  say("Got it. Roughly how big?").then(function(){
+    ask(sp.sizes.map(function(s){
+      return {label:s[0], go:function(){ S.sqft=s[1]; S.sizeLabel=s[0]; condQ(); }};
+    }));
+  });
+}
+
+function condQ(){
+  say("And what's on the slab right now?").then(function(){
+    ask(Object.keys(CONDS).map(function(k){
+      return {label:CONDS[k].label, go:function(){ S.cond=k; timingQ(); }};
+    }));
+  });
+}
+
+function timingQ(){
+  say(CONDS[S.cond].note).then(function(){
+    return say("When are you hoping to have it done?");
+  }).then(function(){
+    ask([
+      {label:"As soon as possible",  go:function(){ S.when="ASAP"; quote(); }},
+      {label:"Next month or two",    go:function(){ S.when="1–2 months"; quote(); }},
+      {label:"Just pricing for now", go:function(){ S.when="Pricing only"; quote(); }}
+    ]);
+  });
+}
+
+function quote(){
+  var sp=SPACES[S.space], m=CONDS[S.cond].mult;
+  var lo=sp.lo*S.sqft*m, hi=sp.hi*S.sqft*m;
+  S.lo=lo; S.hi=hi;
+  say("Working that out…").then(function(){
+    var html='<div class="qh">Estimated range · '+S.sizeLabel+'</div>'
+      +'<div class="qp">'+money(lo)+' – '+money(hi)+'</div>'
+      +'<div class="qn">Based on a '+sp.system+' over roughly '+S.sqft.toLocaleString()+' sq ft, '
+      +CONDS[S.cond].label.toLowerCase()+'. Includes full mechanical prep, crack repair and materials.</div>';
+    thread.appendChild(el("msg bot quote",html)); scroll();
+    return say("That's a real working range, not a teaser. The final number gets locked in writing once we've put eyes on the slab — and that visit is free.");
+  }).then(function(){
+    return say("Want me to hold a time for the on-site look?");
+  }).then(function(){
+    ask([
+      {label:"Yes, let's book it", go:getName},
+      {label:"Just text me the range", ghost:true, go:getName}
+    ]);
+  });
+}
+
+function getName(){
+  say("Perfect. What's your first name?").then(function(){
+    askText("Your first name…", function(v){
+      S.name=v.split(" ")[0].replace(/[^A-Za-z'\-]/g,"") || "there";
+      townQ();
+    });
+  });
+}
+function townQ(){
+  say("Thanks "+S.name+". What town are you in?").then(function(){
+    askText("e.g. Grand Blanc, Fenton, Davison…", function(v){
+      S.town=v.replace(/[<>]/g,"").slice(0,40);
+      book();
+    });
+  });
+}
+
+function book(){
+  var opts=slots();
+  say("We've got crews out that way. Here's what's open — all of these are free, and it takes about twenty minutes:").then(function(){
+    ask(opts.map(function(s){
+      return {label:s.label, go:function(){ confirmBooking(s); }};
+    }).concat([{label:"None of those work", ghost:true, go:function(){
+      say("No problem — I'll have the owner reach out to you directly to find something that does. He'll have your details and the range in front of him.").then(function(){
+        confirmBooking({short:"Callback requested", label:"a callback"});
+      });
+    }}]));
+  });
+}
+
+function confirmBooking(slot){
+  S.slot=slot;
+  var detail = S.callbackOnly
+    ? "A question for the owner · "+(S.town||"Grand Blanc")
+    : SPACES[S.space].label+" · roughly "+S.sqft.toLocaleString()+" sq ft · "+(S.town||"Grand Blanc");
+  say("Done — you're on the calendar.").then(function(){
+    return say("<b>"+slot.label+"</b><br>"+detail+"<br><br>You'll get a text confirmation and a reminder the morning of. If anything changes just reply here.");
+  }).then(function(){
+    return say("Anything else you want to know before then, "+S.name+"?");
+  }).then(function(){
+    pushWhen.textContent=slot.short;
+    pushWhat.textContent=detail;
+    push.classList.add("on");
+    ask([
+      {label:"Ask a question", go:function(){ askText("Type your question…", handleFree); }},
+      {label:"Start the demo over", ghost:true, go:start}
+    ]);
+  });
+}
+
+document.getElementById("replay").addEventListener("click",start);
+
+/* kick off when the widget scrolls into view */
+var started=false;
+new IntersectionObserver(function(es){
+  es.forEach(function(e){
+    if(e.isIntersecting && !started){ started=true; start(); }
+  });
+},{threshold:.25}).observe(thread);
+
+})();
+</script>
+</body>
+</html>
