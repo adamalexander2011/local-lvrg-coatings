@@ -35,7 +35,7 @@
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{max-width:100%;background:var(--ink);color:var(--body);font:400 17px/1.65 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
-img{max-width:100%;display:block}
+img{max-width:100%;height:auto;display:block}
 a{color:var(--gold-lt);text-decoration:none}
 h1,h2,h3{color:var(--bone);text-wrap:balance;line-height:1.05}
 h1{font:800 clamp(38px,6.4vw,74px)/1.02 var(--disp);letter-spacing:-.01em}
@@ -356,9 +356,9 @@ footer{border-top:1px solid var(--line-soft);padding:42px 0 58px;font-size:13.6p
 <section class="hero">
   <div class="hero-bg"><img src="assets/hero-bg.jpg" alt="" fetchpriority="high" width="1800" height="1072"></div>
   <div class="wrap hero-inner">
-    <p class="eyebrow">Clio, Michigan <p class="eyebrow">Clio, Michigan &middot; Open 24 hours, every day</p>middot; Open 24 hours</p>
-    <h1>Your furnace doesn&rsquo;t care<em>that it&rsquo;s 2am.</em></h1>
-    <p class="lede">Neither do we. Licensed, EPA-certified technicians on call around the clock for heating, cooling and water heaters across Genesee, Saginaw and Shiawassee counties &mdash; with honest diagnostics instead of a sales pitch.</p>
+    <p class="eyebrow">Clio, Michigan &middot; Open 24 hours, seven days</p>
+    <h1>No heat at midnight?<em>Someone actually answers.</em></h1>
+    <p class="lede">Goblin is open 24 hours, seven days a week. Tell us what the system is doing whenever it happens, and urgent heating and cooling problems get prioritised for the soonest available visit &mdash; with honest diagnostics instead of a sales pitch.</p>
     <div class="hero-cta">
       <a class="btn btn-gold" href="tel:+18109919229">Call (810) 991-9229</a>
       <a class="btn btn-line" href="#book">Book Online in 60 Seconds</a>
@@ -377,7 +377,7 @@ footer{border-top:1px solid var(--line-soft);padding:42px 0 58px;font-size:13.6p
       <p class="lede">Most HVAC companies send you to voicemail after five and call back tomorrow &mdash; which is no help when the heat is out in January. Ours answers whatever the hour, works out how urgent it actually is, and puts a technician on the calendar before you hang up.</p>
       <div class="conc-pts">
         <div class="conc-pt"><i>01</i><div><b>It triages before it schedules</b><p>System, symptom, how long it&rsquo;s been down, home or business. A house with no heat and a frozen pipe risk gets treated differently to a thermostat that reads two degrees off.</p></div></div>
-        <div class="conc-pt"><i>02</i><div><b>It books the visit itself</b><p>Live availability held on the spot &mdash; including tonight. No phone tag, no &ldquo;someone will reach out.&rdquo;</p></div></div>
+        <div class="conc-pt"><i>02</i><div><b>It books the visit itself</b><p>Live availability held on the spot, whatever time you happen to be looking at it. No phone tag, no voicemail, no &ldquo;someone will reach out.&rdquo;</p></div></div>
         <div class="conc-pt"><i>03</i><div><b>Nothing gets lost at 3am</b><p>Every call lands in one place with the name, the town, the system and the symptom, ready for whoever picks it up.</p></div></div>
       </div>
       <div class="push" id="push">
@@ -417,7 +417,7 @@ footer{border-top:1px solid var(--line-soft);padding:42px 0 58px;font-size:13.6p
         <div class="ic"><img src="assets/icon-ac-repair.jpg" alt="" loading="lazy"></div>
         <h3>AC Repair</h3>
         <p>Cooling issues diagnosed accurately and fixed the same day wherever we can, so you&rsquo;re not sleeping in the heat waiting on a part.</p>
-        <ul><li>Emergency repairs, day or night</li><li>Same-day diagnostics</li><li>Refrigerant leaks and recharge</li><li>Airflow and duct issues</li><li>All major brands</li></ul>
+        <ul><li>Emergency repairs</li><li>Same-day diagnostics</li><li>Refrigerant leaks and recharge</li><li>Airflow and duct issues</li><li>All major brands</li></ul>
       </article>
       <article class="svc">
         <div class="ic"><img src="assets/icon-ac-install.jpg" alt="" loading="lazy"></div>
@@ -429,7 +429,7 @@ footer{border-top:1px solid var(--line-soft);padding:42px 0 58px;font-size:13.6p
         <div class="ic"><img src="assets/icon-heat-repair.jpg" alt="" loading="lazy"></div>
         <h3>Heating Repair</h3>
         <p>Furnace down in a Michigan winter is an emergency and we treat it as one. Diagnostics first, so you&rsquo;re not paying for parts the system didn&rsquo;t need.</p>
-        <ul><li>Furnace diagnostics</li><li>Ignitor, board and blower repairs</li><li>Airflow and short-cycling fixes</li><li>Emergency service around the clock</li><li>Safety and combustion checks</li></ul>
+        <ul><li>Furnace diagnostics</li><li>Ignitor, board and blower repairs</li><li>Airflow and short-cycling fixes</li><li>Emergency service</li><li>Safety and combustion checks</li></ul>
       </article>
       <article class="svc">
         <div class="ic"><img src="assets/icon-heat-install.jpg" alt="" loading="lazy"></div>
@@ -597,7 +597,7 @@ footer{border-top:1px solid var(--line-soft);padding:42px 0 58px;font-size:13.6p
     </div>
     <div class="faq rv">
       <details><summary>How do I know if my system needs service?</summary><div class="a"><p>If it isn&rsquo;t holding a consistent temperature, it&rsquo;s making a noise it didn&rsquo;t used to make, or your energy bill jumped without the weather explaining it, something is off. Short-cycling &mdash; kicking on and off every few minutes &mdash; is worth a call on its own.</p><p>Catching it early is usually the difference between a part and a system.</p></div></details>
-      <details><summary>Do you really answer at night and on weekends?</summary><div class="a"><p>Yes. We&rsquo;re open 24 hours, seven days. No heat in January and no cooling in July are both genuine emergencies, and they don&rsquo;t wait for business hours.</p><p>Urgent calls get prioritised. If it can safely wait until morning we&rsquo;ll tell you that too, rather than charging you for an after-hours visit you didn&rsquo;t need.</p></div></details>
+      <details><summary>Do you really answer at night and on weekends?</summary><div class="a"><p>Yes &mdash; we&rsquo;re open 24 hours, seven days a week, so you can reach us and get the job logged whatever time the system decides to quit.</p><p>Urgent heating and cooling problems are prioritised for the soonest available visit. If it can safely wait until morning we&rsquo;ll tell you that rather than push a call-out you don&rsquo;t need.</p></div></details>
       <details><summary>Should I repair it or replace it?</summary><div class="a"><p>Depends on age, the specific failure and what the repair costs against a new system. A fifteen-year-old furnace with a cracked heat exchanger is a replacement. A ten-year-old unit needing a capacitor is a repair, and anyone telling you otherwise is selling.</p><p>We&rsquo;ll give you the honest read and the numbers for both, then you decide.</p></div></details>
       <details><summary>What brands do you work on?</summary><div class="a"><p>Air conditioners, furnaces and water heaters across all major brands. We install Goodman, Amana, Daikin, Navien and Fujitsu, and we service whatever is already in your house regardless of who put it there.</p></div></details>
       <details><summary>What does a service call cost?</summary><div class="a"><p>We give you upfront pricing before any work begins &mdash; you approve the number first. What we won&rsquo;t do is quote a repair over the phone from a description of a noise, because that number would be a guess and guesses are how people end up paying for parts they didn&rsquo;t need.</p><p>Maintenance plan members get 10&ndash;20% off repairs depending on tier.</p></div></details>
@@ -664,7 +664,7 @@ footer{border-top:1px solid var(--line-soft);padding:42px 0 58px;font-size:13.6p
       <div class="pcol"><h4>The part that makes money</h4><ul>
         <li>The assistant at the top is live &mdash; try it, it triages and books</li>
         <li>It answers nights and weekends, which is when HVAC emergencies actually happen</li>
-        <li>Urgent jobs get flagged and offered same-night slots automatically</li>
+        <li>Urgent jobs are flagged and pushed to the top of the list automatically</li>
         <li>The on-call tech gets the job pushed to their phone the second it books</li>
       </ul></div>
     </div>
@@ -691,10 +691,11 @@ footer{border-top:1px solid var(--line-soft);padding:42px 0 58px;font-size:13.6p
             <li>FAQ answers &mdash; the questions are yours, the wording is mine</li>
             <li>The "Warrior pays for itself" and repair-vs-replace claims</li>
             <li>The three-county framing of the service area</li>
+            <li>&ldquo;Prioritised for the soonest available visit&rdquo; &mdash; your FAQ says urgent issues are prioritised, but not how fast</li>
           </ul>
         </div>
       </div>
-      <p style="font-size:14px;line-height:1.6;color:var(--dim);margin-top:21px;padding-top:19px;border-top:1px solid var(--line-soft)">Nothing in the placeholder column should go live until you confirm it. I also deliberately left off customer quotes &mdash; your reviews load through a widget I couldn&rsquo;t read, and I won&rsquo;t invent a testimonial. Pull the real ones from your Google profile and they&rsquo;ll be stronger than anything I could write. This page is set to <code style="font-family:var(--mono);font-size:13px;color:var(--gold-lt)">noindex</code> so it can never compete with your real site in search.</p>
+      <p style="font-size:14px;line-height:1.6;color:var(--dim);margin-top:21px;padding-top:19px;border-top:1px solid var(--line-soft)">One thing worth calling out specifically: your site lists <b>Mon&ndash;Sun, open 24 hours</b>, so this page says you can be <em>reached</em> at any hour and that urgent problems get prioritised. It deliberately stops short of promising a technician at the door at 2am, because I have no way to know whether you actually dispatch overnight. If you do, say so plainly and it becomes the strongest line on the page. If you don&rsquo;t, this wording is already accurate. Either way, that is your call to make, not mine. Nothing else in the placeholder column should go live until you confirm it either. I also deliberately left off customer quotes &mdash; your reviews load through a widget I couldn&rsquo;t read, and I won&rsquo;t invent a testimonial. Pull the real ones from your Google profile and they&rsquo;ll be stronger than anything I could write. This page is set to <code style="font-family:var(--mono);font-size:13px;color:var(--gold-lt)">noindex</code> so it can never compete with your real site in search.</p>
     </div>
     <div class="rv" style="margin-top:42px;display:flex;gap:13px;flex-wrap:wrap">
       <a class="btn btn-gold" href="https://locallvrg.co">See what Local LVRG does</a>
@@ -724,14 +725,14 @@ var thread=document.getElementById("thread"), chips=document.getElementById("chi
 var S={};
 
 var ISSUES={
-  noheat:  {label:"No heat",              sys:"Heating", follow:"Furnace down in Michigan is the one we drop everything for."},
+  noheat:  {label:"No heat",              sys:"Heating", follow:"Furnace down in a Michigan winter is top of the list."},
   nocool:  {label:"No cooling",           sys:"Cooling", follow:"Got it. We'll want to know whether the outdoor unit is running at all — the tech will check that first."},
   water:   {label:"Water heater",         sys:"Water heater", follow:"Understood. We'll check the gas, the venting and the tank condition before anything else."},
   noise:   {label:"Strange noise or smell", sys:"Diagnostic", follow:"Worth taking seriously. A burning or gas smell is an emergency — if you smell gas, leave the house and call the gas company first, then us."},
   plan:    {label:"Maintenance plan",     sys:"Goblin Guard", follow:"Good call — the systems that get looked at twice a year are the ones that don't die in a cold snap."}
 };
 var URG={
-  out:     {label:"It's completely out",       tag:"URGENT", note:"That's an emergency as far as we're concerned. Let's get someone moving."},
+  out:     {label:"It's completely out",       tag:"URGENT", note:"That gets flagged urgent. Let's get the details down so dispatch can move on it."},
   bad:     {label:"Running, but not right",    tag:"Priority", note:"Good — catching it while it still runs usually means a part rather than a system."},
   planning:{label:"Not urgent, just planning", tag:"Scheduled", note:"No problem. We'll find a time that suits you rather than squeezing you in."}
 };
@@ -766,7 +767,7 @@ function askText(ph,cb){
 function slots(urgent){
   var out=[], d=new Date(), h=d.getHours();
   if(urgent){
-    if(h<21) out.push({label:"Tonight, within about 2 hours",short:"Tonight · next 2 hrs"});
+    out.push({label:"Soonest available — flagged urgent",short:"Urgent · soonest available"});
     out.push({label:"First thing tomorrow, 7:30 AM",short:"Tomorrow · 7:30 AM"});
     out.push({label:"Tomorrow midday, 12:00 PM",short:"Tomorrow · 12:00 PM"});
     return out.slice(0,3);
@@ -879,10 +880,10 @@ function offerVisit(){
   var html='<div class="qh">'+URG[S.urg].tag+" · "+ISSUES[S.issue].sys+'</div>'
     +'<div class="qp">'+(urgent?"Emergency call-out":"Technician visit")+'</div>'
     +'<div class="qn">'+ISSUES[S.issue].label+" · "+S.prop+" · "+S.town
-    +". Upfront pricing before any work starts, and you approve the number first."+(urgent?" We'll get someone moving tonight.":"")+'</div>';
+    +". Upfront pricing before any work starts, and you approve the number first."+(urgent?" Urgent problems are prioritised for the soonest available visit.":"")+'</div>';
   thread.appendChild(el("msg bot card"+(urgent?" urgent":""),html)); scroll();
-  say(urgent?"Want me to get a tech dispatched?":"Want me to put a tech on the calendar?").then(function(){
-    ask([{label:urgent?"Yes, send someone":"Yes, book it", hot:urgent, go:getName},
+  say(urgent?"Want me to get this logged as urgent?":"Want me to put a tech on the calendar?").then(function(){
+    ask([{label:urgent?"Yes, log it urgent":"Yes, book it", hot:urgent, go:getName},
          {label:"Not yet — I have a question", ghost:true, go:freeMode}]);
   });
 }
@@ -901,7 +902,7 @@ function getName(){
 
 function book(){
   var urgent=S.urg==="out", opts=slots(urgent);
-  say(urgent?"Thanks "+S.name+". Here's the soonest we can be there:":"Thanks "+S.name+". Here's what's open:").then(function(){
+  say(urgent?"Thanks "+S.name+". Here's what I can get you — dispatch confirms the window:":"Thanks "+S.name+". Here's what's open:").then(function(){
     ask(opts.map(function(sl){return {label:sl.label, go:function(){confirmBooking(sl);}};})
       .concat([{label:"None of those work", ghost:true, go:function(){
         say("No problem — I'll have the on-call tech reach out directly to find something that does. They'll have your details in front of them.").then(function(){
