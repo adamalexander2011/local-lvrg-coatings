@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /goblin-hvac/
+Disallow: /viper.html
