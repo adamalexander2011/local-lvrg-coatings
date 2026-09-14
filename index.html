@@ -309,9 +309,10 @@
   .pdemo .node.g{background:var(--book-soft);border-color:#CBE7D3;color:var(--book-deep)}
   .pdemo .fa{align-self:center;color:var(--muted);font:700 16px/1 var(--mono)}
   .pcards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:stretch}
+  .pcards.one{grid-template-columns:minmax(0,560px);justify-content:center}
   .pcard{background:var(--screen);border:1px solid var(--hairline);border-radius:16px;padding:30px 26px;display:flex;flex-direction:column;gap:0}
   .pcard.hot{border:2.5px solid var(--accent);box-shadow:0 20px 50px rgba(194,65,12,.12);position:relative}
-  .pcard.hot::before{content:"The complete 24/7 system";position:absolute;top:-14px;left:24px;background:var(--accent);color:#fff;font:700 12px/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;padding:7px 12px;border-radius:6px}
+  .pcard.hot::before{content:"Coating pro package";position:absolute;top:-14px;left:24px;background:var(--accent);color:#fff;font:700 12px/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;padding:7px 12px;border-radius:6px}
   .pcard .aud{font:700 12px/1.4 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
   .pcard h3{font-size:24px;margin-top:10px;line-height:1.15}
   .pcard .pdesc{font-size:15px;margin-top:8px;min-height:3em}
@@ -597,7 +598,7 @@
         </div>
         <div class="mc-card hot">
           <p class="mc-title">Your 24/7 AI employee</p>
-          <p class="mc-price">$497<span>/mo</span></p>
+          <p class="mc-price">$297<span>/mo</span></p>
           <p class="mc-sub">every hour of every day, including 2:47 AM and Sunday</p>
           <ul class="mc-list yes">
             <li>Covers all 168 hours</li>
@@ -671,73 +672,37 @@
       <p style="margin-top:14px;font-size:18px">You worked out what last month cost you. Hold it against these.</p>
 
       <div style="margin:26px auto 0;max-width:760px;text-align:left;background:var(--book-soft);border:2px solid var(--book);border-radius:16px;padding:26px 28px">
-        <p style="font:700 12.5px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--book-deep)">Ends September 30</p>
-        <h3 style="margin-top:12px;font-size:26px;line-height:1.15">Until September 30, your first month is inside the setup fee.</h3>
-        <p style="margin-top:12px">Normally the build is one payment and your first month is another. Until the 30th they are the same payment.</p>
-        <p style="margin-top:14px"><strong>So here is exactly what $497 buys you.</strong> A working assistant, built around your company, your services, your service area and your calendar. It answers every inquiry in seconds, at eleven at night and on a Sunday. It handles the questions you have answered a thousand times. It works out whether it is a real job. It puts the estimate on your calendar at the times you set. And it runs your entire first month on that one payment, before a second one exists.</p>
-        <p style="margin-top:12px"><strong>That is $497 rather than $994</strong>, and a full month of nothing getting missed while you decide whether it earns its place.</p>
+        <p style="font:700 12.5px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--book-deep)">Setup waived for coating pros</p>
+        <h3 style="margin-top:12px;font-size:26px;line-height:1.15">One price. $297 a month. The $500 setup is on us.</h3>
+        <p style="margin-top:12px">Normally the build is one payment and your first month is another. For coating pros, the build is free. Your first $297 starts setup and covers your first month.</p>
+        <p style="margin-top:14px"><strong>So here is exactly what $297 buys you.</strong> A working assistant, built around your company, your services, your service area and your calendar. It answers every inquiry in seconds, at eleven at night and on a Sunday. It handles the questions you have answered a thousand times. It works out whether it is a real job. It puts the estimate on your calendar at the times you set.</p>
         <p style="margin-top:12px">You do not have to take our word for a single line of that. <a href="demo.html">Open the demo</a>, play the homeowner, ask it the things you actually get asked, and try to break it before you spend a dollar.</p>
-        <p style="margin-top:14px;font-size:15px;color:var(--muted)"><strong>On October 1 this ends.</strong> The setup fee and the first month go back to being two separate payments. Nothing else about the system changes, and the price does not go up. You just stop getting the month.</p>
+        <p style="margin-top:14px;font-size:15px;color:var(--muted)"><strong>Month to month.</strong> No long term contract. Cancel any month and it stops. Each paid month includes $50 in AI conversation credit, added after payment verification. US text delivery is covered by the $297 service fee.</p>
       </div>
     </div>
 
-    <div class="pcards">
-      <div class="pcard rv">
-        <p class="aud">Already getting your own leads</p>
+    <div class="pcards one">
+      <div class="pcard hot rv">
+        <p class="aud">For coating pros already getting inquiries</p>
         <h3>After-Hours / 24-7 Estimate Catcher</h3>
-        <p class="pdesc">Your always-on AI employee for every inquiry you already generate.</p>
-        <div class="bigprice"><span class="n">$497</span><span class="per">/mo</span>
-          <span class="sub">+ $497 setup, and it includes your first month &middot; 90 day commitment</span></div>
+        <p class="pdesc">Your always-on assistant for every inquiry you already generate. Text only. It never calls your customers.</p>
+        <div class="bigprice"><span class="n">$297</span><span class="per">/mo</span>
+          <span class="sub"><strong>$500 setup waived</strong> &middot; month to month &middot; your first payment starts setup</span></div>
         <div class="prule"></div>
         <ul class="feat">
           <li><strong>Answers in seconds</strong>, nights, weekends, holidays</li>
           <li><strong>Missed-call text-back</strong> catches every caller</li>
-          <li><strong>Qualifies the project</strong> like a coating pro</li>
+          <li><strong>Qualifies the project</strong> like a coating pro. Two car or three, what is on the floor now</li>
           <li><strong>Name and address captured</strong>, then booked on your calendar</li>
           <li><strong>Human handoff</strong> when judgment is needed</li>
           <li>After-hours only or <strong>full 24/7, your call</strong></li>
+          <li><strong>$50 AI conversation credit</strong> included every paid month</li>
         </ul>
         <p class="statline">68% of appointments book after business hours &middot; Sunday is the single busiest day<span>2025 booking data across the platforms our systems are built on</span></p>
-        <a class="btn btn-ghost pbtn" href="start-afterhours.html">Get started</a>
-      </div>
-
-      <div class="pcard hot rv">
-        <p class="aud">Ready for the complete system &middot; includes the base</p>
-        <h3>Booked Solid</h3>
-        <p class="pdesc">We generate the lead, work the conversation, and put the estimate on your calendar.</p>
-        <div class="bigprice"><span class="n">$997</span><span class="per">/mo</span>
-          <span class="sub">+ $997 setup, first month included &middot; <strong>includes everything in the Estimate Catcher</strong> &middot; <strong>requires $1,500/mo minimum ad spend</strong>, paid directly by you &middot; 90 day commitment</span></div>
-        <div class="prule"></div>
-        <ul class="feat">
-          <li><strong>Everything in the Estimate Catcher</strong>, plus:</li>
-          <li><strong>Ads built and managed</strong> in your service area</li>
-          <li><strong>Landing page and lead form</strong> included</li>
-          <li><strong>Reminders and no-show follow-up</strong></li>
-          <li><strong>Old-lead recovery</strong> built in</li>
-          <li><strong>Refund guarantee:</strong> setup refunded if it never passes the live test</li>
-        </ul>
-        <a class="btn btn-primary pbtn" href="start-booked-solid.html">Get started</a>
-      </div>
-
-      <div class="pcard rv">
-        <p class="aud">Sitting on old leads &middot; add-on</p>
-        <h3>Lead Revival Sprint</h3>
-        <p class="pdesc">We work the list you already paid for and book the ones still interested.</p>
-        <div class="bigprice"><span class="n">$297</span>
-          <span class="sub">one time &middot; <strong>includes 10 booked appointments</strong> &middot; add-on to the Estimate Catcher</span></div>
-        <div class="prule"></div>
-        <ul class="feat">
-          <li><strong>Ten booked appointments</strong>, included. Not ten conversations, ten on your calendar</li>
-          <li><strong>Lead-list audit</strong> with consent and opt-out review</li>
-          <li><strong>Reactivation conversations</strong> that sound human</li>
-          <li><strong>Campaign summary</strong> of every conversation</li>
-          <li><strong>After your ten it stops.</strong> We tell you, and you decide whether to run another ten. Nothing charges on its own</li>
-        </ul>
-        <p class="note" style="font-size:14px;color:var(--muted);margin-bottom:12px">Runs on the Estimate Catcher and cannot be bought on its own. It needs somewhere to send the people it wakes up.</p>
-        <a class="btn btn-ghost pbtn" href="start-revival.html">Add the Sprint &middot; $297</a>
+        <a class="btn btn-primary pbtn" href="COATINGS_PAYMENT_LINK_PENDING">Start my first month &middot; $297</a>
+        <p class="note" style="font-size:14px;color:var(--muted);margin-top:12px">See the full package, then pay securely. Your first payment starts setup.</p>
       </div>
     </div>
-
 
     <div class="pdemo rv" aria-hidden="true">
       <span class="scene">9:41 PM &middot; You&rsquo;re having a drink with a friend</span>
@@ -815,7 +780,7 @@
       <details><summary>Do you also run advertising?</summary><p>Yes. Advertising is added after the booking process is ready to work the inquiries it generates.</p></details>
       <details><summary>What happens when something unusual is asked?</summary><p>The conversation is paused and handed to the owner or designated team member with the context attached.</p></details>
       <details><summary>What calendar does it use?</summary><p>It is configured around your actual availability and existing scheduling process.</p></details>
-      <details><summary>How much does it cost?</summary><p>The <strong>Estimate Catcher</strong> is the base. It is $497 to set up, <strong>and that includes your first month</strong>. After that it is $497 a month.</p><p><strong>Booked Solid</strong> is the larger system, and it <strong>contains</strong> the Estimate Catcher rather than sitting beside it: $997 to set up, first month included again, then $997 a month for management. Nobody ends up on Booked Solid without the base, because the base is part of it. Ad spend is paid directly by you to the platforms rather than hidden in our fee, and Booked Solid <strong>requires a minimum of $1,500 a month in ad spend</strong>, so budget about <strong>$2,497 a month all in</strong>. We do not run ads below that for anybody, because under that number the campaign never gathers enough data to produce appointments and you would be paying a management fee for nothing. If that is not a budget you want to commit to yet, start with the Estimate Catcher on its own.</p><p>Both run on a <strong>90 day commitment</strong>, and the monthly never begins until you have watched your own system book a test estimate and told us it is right.</p></details>
+      <details><summary>How much does it cost?</summary><p><strong>$297 a month.</strong> The $500 custom setup is waived for coating pros. Your first payment starts setup and covers your first month. It is month to month with no long term contract, and each paid month includes $50 in AI conversation credit. The monthly never begins until you have watched your own system book a test estimate and told us it is right.</p></details>
     </div>
   </div>
 </section>
